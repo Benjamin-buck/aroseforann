@@ -14,7 +14,7 @@ const Tour = () => {
   return (
     <div>
       <h2 className="text-5xl font-semibold text-center">Tour Dates</h2>
-      <Table className="max-w-[1200px] mx-auto my-8">
+      <Table className="container mx-auto my-8">
         {/* <TableCaption>No more shows have been added.</TableCaption> */}
         <TableHeader>
           <TableRow className="text-lg hover:bg-transparent">
