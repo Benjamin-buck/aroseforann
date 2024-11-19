@@ -25,14 +25,18 @@ const LinksPage = () => {
         </div>
       </div>
       <div className="my-8 flex flex-col gap-3">
-        <h1 className=" text-2xl text-center font-bold">Streaming</h1>
         <Link href="/">
-          <button className="bg-green-500 w-full py-4 text-xl font-bold rounded-xl">
+          <button className="hover:bg-black bg-black w-full py-4 text-xl font-bold rounded-xl">
+            Website
+          </button>
+        </Link>
+        <Link href="/">
+          <button className="hover:bg-black bg-green-500 w-full py-4 text-xl font-bold rounded-xl">
             Spotify
           </button>
         </Link>
         <Link href="/">
-          <button className="bg-red-500 w-full py-4 text-xl font-bold rounded-xl">
+          <button className="hover:bg-black bg-red-500 w-full py-4 text-xl font-bold rounded-xl">
             Apple Music
           </button>
         </Link>
