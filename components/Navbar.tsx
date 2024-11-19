@@ -14,18 +14,23 @@ const Navbar = () => {
           <p className="max-md:hidden">
             Sign up for the A Rose For Ann fanclub!
           </p>
-          <div>
-            <ul className="flex gap-2">
-              <li>
-                <FaSpotify className="hover:text-brand-red" />
-              </li>
-              <li>
-                <SiApplemusic className="hover:text-brand-red" />
-              </li>
-              <li>
-                <IoLogoInstagram />
-              </li>
-            </ul>
+          <div className="flex gap-3">
+            <Link
+              href="https://open.spotify.com/artist/2TFcpb3xDt8tdmRfWdW48W?si=ZHwoV4TMQ5qEFLLhyvP9Ew"
+              target="blank"
+            >
+              <FaSpotify className="hover:text-brand-red" />
+            </Link>
+            <Link
+              href="https://music.apple.com/us/artist/a-rose-for-ann/1683716723"
+              target="blank"
+            >
+              <SiApplemusic className="hover:text-brand-red" />
+            </Link>
+
+            <Link href="https://www.instagram.com/arose4ann" target="blank">
+              <IoLogoInstagram />
+            </Link>
           </div>
           <ul className="flex gap-4">
             <li>
