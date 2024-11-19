@@ -1,9 +1,10 @@
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Tour from "@/components/Tour";
 
 export default function Home() {
   return (
-    <div className="h-[2000px]">
+    <div className="">
       <section className="mb-[200px]">
         <Hero />
       </section>
@@ -11,6 +12,7 @@ export default function Home() {
       <section>
         <Tour />
       </section>
+      <footer></footer>
     </div>
   );
 }
