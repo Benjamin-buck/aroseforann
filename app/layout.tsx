@@ -35,14 +35,14 @@ export default function RootLayout({
           alt="background"
           width={1920}
           height={1080}
-          className="-z-10 top-0 left-0 opacity-75 max-md:hidden fixed"
+          className="-z-10 top-0 left-0 opacity-75 max-md:hidden w-[100vw] fixed"
         />
         <Image
           src="/bg-2.svg"
           alt="background"
           width={1920}
           height={1080}
-          className="-z-20 top-0 left-0 opacity-75 max-md:hidden fixed"
+          className="-z-20 top-0 left-0 opacity-75 max-md:hidden w-[100vw] fixed"
         />
         <Image
           src="/iphone-bg.png"

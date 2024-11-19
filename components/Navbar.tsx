@@ -14,10 +14,14 @@ const Navbar = () => {
           </p>
           <ul className="flex gap-4">
             <li>
-              <Link href="/login">Log in</Link>
+              <Link href="/login" className="hover:text-brand-red">
+                Log in
+              </Link>
             </li>
             <li>
-              <Link href="/signup">Register</Link>
+              <Link href="/signup" className="hover:text-brand-red">
+                Register
+              </Link>
             </li>
           </ul>
         </div>
@@ -38,7 +42,7 @@ const Navbar = () => {
               <li key={href}>
                 <Link
                   href={href}
-                  className="text-lg font-semibold hover:text-accent transition-all duration-300"
+                  className="text-lg font-semibold hover:text-brand-red transition-all duration-300"
                 >
                   {label}
                 </Link>
