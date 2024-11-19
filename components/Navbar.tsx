@@ -2,16 +2,31 @@ import { navbarLinks } from "@/constants/data";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { IoMenu } from "react-icons/io5";
+import { FaSpotify } from "react-icons/fa";
+import { IoLogoInstagram, IoMenu } from "react-icons/io5";
+import { SiApplemusic } from "react-icons/si";
 
 const Navbar = () => {
   return (
     <div className="z-10">
       <div className="bg-black py-2 font-semibold">
-        <div className="mx-auto container flex justify-between max-md:justify-end max-md:px-6">
+        <div className="mx-auto container flex justify-between max-md:justify-end max-md:px-6 items-center">
           <p className="max-md:hidden">
             Sign up for the A Rose For Ann fanclub!
           </p>
+          <div>
+            <ul className="flex gap-2">
+              <li>
+                <FaSpotify className="hover:text-brand-red" />
+              </li>
+              <li>
+                <SiApplemusic className="hover:text-brand-red" />
+              </li>
+              <li>
+                <IoLogoInstagram />
+              </li>
+            </ul>
+          </div>
           <ul className="flex gap-4">
             <li>
               <Link href="/login" className="hover:text-brand-red">
