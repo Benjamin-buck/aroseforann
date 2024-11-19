@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import "./globals.css";
+import "../globals.css";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import Footer from "@/components/Footer";
 
 const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
+  src: "../fonts/GeistVF.woff",
   variable: "--font-geist-sans",
   weight: "100 900",
 });
 const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
+  src: "../fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
 });
@@ -52,9 +52,8 @@ export default function RootLayout({
           height={932}
           className="-z-20 fixed top-0 left-0 opacity-75 md:hidden w-[100%]"
         />
-        <Navbar />
+
         <div className="max-sm:px-6">{children}</div>
-        <Footer />
       </body>
     </html>
   );

@@ -11,7 +11,6 @@ export default function Home() {
       <section>
         <Tour />
       </section>
-      <footer></footer>
     </div>
   );
 }
