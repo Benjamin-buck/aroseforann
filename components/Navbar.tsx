@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <div className="z-10">
       <div className="bg-black py-2 font-semibold">
-        <div className="mx-auto container flex justify-between max-md:justify-end max-md: px-6">
+        <div className="mx-auto container flex justify-between max-md:justify-end max-md:px-6">
           <p className="max-md:hidden">
             Sign up for the A Rose For Ann fanclub!
           </p>
