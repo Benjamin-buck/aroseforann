@@ -2,6 +2,7 @@ import React from "react";
 import {
   Table,
   TableBody,
+  TableCaption,
   TableCell,
   TableHead,
   TableHeader,
@@ -12,10 +13,12 @@ import Link from "next/link";
 
 const Tour = () => {
   return (
-    <div>
+    <div id="tour">
       <h2 className="text-5xl font-semibold text-center">Tour Dates</h2>
       <Table className="container mx-auto my-8">
-        {/* <TableCaption>No more shows have been added.</TableCaption> */}
+        <TableCaption className="text-lg">
+          There are currently no shows scheduled. Please check back later.
+        </TableCaption>
         <TableHeader>
           <TableRow className="text-lg hover:bg-transparent">
             <TableHead className="w-[200px] text-brand-red font-semibold">
