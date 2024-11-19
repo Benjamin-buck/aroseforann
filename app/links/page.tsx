@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { FaInstagram } from "react-icons/fa";
 
 const LinksPage = () => {
   return (
@@ -17,6 +18,11 @@ const LinksPage = () => {
       <div className="text-center">
         <h1 className="text-3xl  font-bold">A Rose for Ann</h1>
         <p>A Canadian pop-punk band. New music coming out soon!</p>
+        <div className="flex justify-center my-2 text-3xl gap-2">
+          <FaInstagram />
+          <FaInstagram />
+          <FaInstagram />
+        </div>
       </div>
       <div className="my-8 flex flex-col gap-3">
         <h1 className=" text-2xl text-center font-bold">Streaming</h1>
