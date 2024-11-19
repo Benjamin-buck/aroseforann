@@ -1,6 +1,7 @@
 export const navbarLinks = [
   { label: "Home", href: "/" },
   { label: "Tour", href: "/tour" },
+  { label: "Merch", href: "/merch" },
 ];
 
 export const tourDates = [
