@@ -6,6 +6,12 @@ export const navbarLinks = [
   // { label: "Fanclub", href: "/fanclub" },
 ];
 
+export const supportLinks = [
+  { label: "FAQ", href: "/faq" },
+  { label: "Support", href: "/support" },
+  { label: "Booking", href: "/booking" },
+];
+
 export const tourDates = [
   // {
   //   city: "Ottawa",
