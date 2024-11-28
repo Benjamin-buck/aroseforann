@@ -4,6 +4,8 @@ import React from "react";
 import { FaInstagram } from "react-icons/fa";
 import { FaSpotify } from "react-icons/fa6";
 import { SiApplemusic } from "react-icons/si";
+import { FaFacebook } from "react-icons/fa";
+import { SiYoutubemusic } from "react-icons/si";
 
 const links = [
   {
@@ -68,6 +70,12 @@ const LinksPage = () => {
         <div className="flex justify-center my-2 text-3xl gap-2">
           <Link href="http://www.instagram.com/arose4ann">
             <FaInstagram />
+          </Link>
+          <Link href="https://www.facebook.com/share/19gpHCYRaY/?mibextid=LQQJ4d">
+            <FaFacebook />
+          </Link>
+          <Link href="https://www.youtube.com/@aroseforann">
+            <SiYoutubemusic />
           </Link>
         </div>
       </div>
