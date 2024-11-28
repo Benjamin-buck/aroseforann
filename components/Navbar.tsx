@@ -99,7 +99,8 @@ const Navbar = () => {
               <Link
                 href={href}
                 onClick={handleClick}
-                className="border-b w-full text-center py-4 text-3xl font-semibold "
+                className="border-b w-full text-center py-4 text-3xl font-semibold"
+                key={href}
               >
                 {label}
               </Link>
