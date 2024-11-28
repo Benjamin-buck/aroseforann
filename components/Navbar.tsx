@@ -38,7 +38,8 @@ const Navbar = () => {
               <IoLogoInstagram />
             </Link>
           </div>
-          <ul className="flex gap-4">
+          <Link href="/links">Stream Now</Link>
+          {/* <ul className="flex gap-4">
             <li>
               <Link href="/login" className="hover:text-brand-red">
                 Log in
@@ -49,7 +50,7 @@ const Navbar = () => {
                 Register
               </Link>
             </li>
-          </ul>
+          </ul> */}
         </div>
       </div>
 
@@ -85,7 +86,7 @@ const Navbar = () => {
 
       {/* Mobile Navigation */}
       {mobileNav && (
-        <div className="bg-black h-[100vh] w-full z-10 absolute top-0">
+        <div className="bg-black h-[100vh] w-full z-10 absolute top-0 stop-scrolling">
           <Image
             src="/aroseforann-logo-black.png"
             height={101}
