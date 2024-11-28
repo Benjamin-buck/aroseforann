@@ -52,7 +52,10 @@ export default function RootLayout({
           className="-z-20 fixed top-0 left-0 opacity-75 md:hidden w-[100%]"
         />
 
-        <div className="max-sm:px-6">{children}</div>
+        <div className="max-sm:px-6">
+          {children}
+          <Analytics />
+        </div>
       </body>
     </html>
   );
