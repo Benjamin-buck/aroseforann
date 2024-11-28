@@ -51,7 +51,7 @@ const links = [
 
 const LinksPage = () => {
   return (
-    <div>
+    <div className="lg:mx-[500px]">
       <div className="flex w-full justify-center py-10">
         <Image
           src="/aroseforann-logo-black.png"
