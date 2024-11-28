@@ -21,3 +21,7 @@ export const tourDates = [
   //   rsvp: "http://www.ticketmaster.com",
   // },
 ];
+
+export const socialMedia = [
+  { label: "Instagram", href: "http://www.instagram.com/arose4ann" },
+];

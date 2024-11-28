@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { FaInstagram } from "react-icons/fa";
 import { FaSpotify } from "react-icons/fa6";
+import { SiApplemusic } from "react-icons/si";
 
 const links = [
   {
@@ -65,9 +66,9 @@ const LinksPage = () => {
         <h1 className="text-3xl  font-bold">A Rose for Ann</h1>
         <p>A Canadian pop-punk band. New music coming out soon!</p>
         <div className="flex justify-center my-2 text-3xl gap-2">
-          <FaInstagram />
-          <FaInstagram />
-          <FaInstagram />
+          <Link href="http://www.instagram.com/arose4ann">
+            <FaInstagram />
+          </Link>
         </div>
       </div>
       <div className="my-8 flex flex-col gap-3">
@@ -76,17 +77,20 @@ const LinksPage = () => {
             Website
           </button>
         </Link>
-        <Link href="/">
-          <button className="hover:bg-black bg-green-500 w-full py-4 text-xl font-bold rounded-xl">
+        <Link href="https://open.spotify.com/artist/7G9PGkPgXRlumAUEXBh2uY?si=yXdrQhX4StmogFYLa_WCSA">
+          <button className="hover:bg-black bg-green-500 w-full py-4 text-xl font-bold rounded-xl flex gap-4 items-center justify-center">
+            <FaSpotify className="text-3xl" />
             Spotify
           </button>
         </Link>
-        <Link href="/">
-          <button className="hover:bg-black bg-red-500 w-full py-4 text-xl font-bold rounded-xl">
+        <Link href="https://music.apple.com/us/artist/benjamin-alan/1497080917">
+          <button className="hover:bg-black bg-red-500 w-full py-4 text-xl font-bold rounded-xl flex gap-4 items-center justify-center">
+            <SiApplemusic className="text-3xl" />
             Apple Music
           </button>
         </Link>
         <div className="border my-2" />
+        <h2 className="text-3xl font-semibold text-center">Streaming Links:</h2>
 
         {links.map((link) => (
           <Link href={link.href} key={link.href}>
