@@ -42,4 +42,16 @@ export const music = [
       "https://benjaminalan.bandcamp.com/track/hold-you-like-a-secret-feat-ryan-stevenson",
     href: "/hold-you-like-a-secret",
   },
+  {
+    title: "S.O.S",
+    duration: "2:21",
+    artwork: "/sos.png",
+    tidal: "",
+    spotify:
+      "https://open.spotify.com/track/2dkeqUpTejyQaMmP7XkKcF?si=9ee5c8b282044e50",
+    appleMusic: "https://music.apple.com/us/album/s-o-s-single/1716283064",
+    amazonMusic: "",
+    itunes: "https://benjaminalan.bandcamp.com/track/s-o-s",
+    href: "/hold-you-like-a-secret",
+  },
 ];
