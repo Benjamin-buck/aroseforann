@@ -54,4 +54,17 @@ export const music = [
     itunes: "https://benjaminalan.bandcamp.com/track/s-o-s",
     href: "/hold-you-like-a-secret",
   },
+  {
+    title: "Beccas Song",
+    duration: "2:21",
+    artwork: "/beccas-song.png",
+    tidal: "",
+    spotify:
+      "https://open.spotify.com/track/1OpjuVJwtH1Gduj5JCd47t?si=02504989103748f5",
+    appleMusic:
+      "https://music.apple.com/us/album/beccas-song/1707859090?i=1707859092",
+    amazonMusic: "",
+    itunes: "https://benjaminalan.bandcamp.com/track/beccas-song",
+    href: "/hold-you-like-a-secret",
+  },
 ];

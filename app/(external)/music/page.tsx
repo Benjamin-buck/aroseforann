@@ -15,7 +15,7 @@ const MusicPage = () => {
         {music.map((song) => (
           <div
             key={song.title}
-            className="w-full bg-white text-black pl-3 pr-6 flex max-sm:flex-col max-sm:justify-normal max-sm:items-start max-sm:gap-4 justify-between items-center py-2 border-b"
+            className="w-full bg-white text-black pl-3 pr-6 flex max-sm:flex-col max-sm:justify-normal max-sm:items-start max-sm:gap-4 justify-between items-center py-2 max-md:py-6 border-b"
           >
             <div className="flex gap-5 items-center max-md:flex-col max-md:items-start">
               <div className="flex gap-3">
