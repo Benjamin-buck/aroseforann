@@ -53,7 +53,7 @@ export default function RootLayout({
           className="-z-20 fixed top-0 left-0 opacity-75 md:hidden w-[100%]"
         />
         <Navbar />
-        <div className="max-sm:px-6">{children}</div>
+        <div className="max-sm:px-6 min-h-[55vh]">{children}</div>
         <Footer />
       </body>
     </html>
