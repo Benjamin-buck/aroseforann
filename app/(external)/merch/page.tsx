@@ -14,6 +14,7 @@ const MerchPage = () => {
             width={500}
             height={500}
             className="rounded-md"
+            alt="Merch"
           />
           <div className="py-3">
             <div className="flex items-center justify-between">
