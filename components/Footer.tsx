@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div className="bg-black mt-[100px] py-5 w-full border-t border-brand-red">
       <div className="mx-auto container flex max-md:flex-col max-md:items-center max-md:text-center">
-        <div className="w-[40%]">
+        <div className="w-[40%] flex justify-center">
           <Image
             src="/aroseforann-logo-black.png"
             height={101}
