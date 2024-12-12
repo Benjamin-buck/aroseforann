@@ -2,41 +2,41 @@ export const music = [
   {
     title: "Hold You Like a Secret",
     duration: "2:21",
-    artwork: "/holdyoulikeasecret.png",
+    artwork: "/avatar.png",
     tidal: "",
     spotify:
-      "https://open.spotify.com/track/5rh3ncNBuOnPuJxabnUbHN?si=81fa4dbcd9484362",
-    appleMusic:
-      "https://music.apple.com/us/album/hold-you-like-a-secret-single/1726213065",
+      "https://open.spotify.com/track/1A2EJiDq6JzqLxs0V6BrBl?si=abd56a3f74d04ff9",
+    appleMusic: "",
     amazonMusic: "",
-    itunes:
-      "https://benjaminalan.bandcamp.com/track/hold-you-like-a-secret-feat-ryan-stevenson",
+    itunes: "",
     href: "/hold-you-like-a-secret",
+    musicIcon: true,
   },
   {
     title: "S.O.S",
     duration: "2:21",
-    artwork: "/sos.png",
+    artwork: "/avatar.png",
     tidal: "",
     spotify:
-      "https://open.spotify.com/track/2dkeqUpTejyQaMmP7XkKcF?si=9ee5c8b282044e50",
-    appleMusic: "https://music.apple.com/us/album/s-o-s-single/1716283064",
+      "https://open.spotify.com/track/5xAnaQAWecqo3IpNjM9hKW?si=375a44965a834f7c",
+    appleMusic: "",
     amazonMusic: "",
-    itunes: "https://benjaminalan.bandcamp.com/track/s-o-s",
-    href: "/hold-you-like-a-secret",
+    itunes: "",
+    href: "/sos",
+    musicIcon: true,
   },
   {
     title: "Beccas Song",
     duration: "2:21",
-    artwork: "/beccas-song.png",
+    artwork: "/avatar.png",
     tidal: "",
     spotify:
-      "https://open.spotify.com/track/1OpjuVJwtH1Gduj5JCd47t?si=02504989103748f5",
-    appleMusic:
-      "https://music.apple.com/us/album/beccas-song/1707859090?i=1707859092",
+      "https://open.spotify.com/track/5uHEWu6AWbrlIOrkxl8JKh?si=1a478aa20e7a461a",
+    appleMusic: "",
     amazonMusic: "",
-    itunes: "https://benjaminalan.bandcamp.com/track/beccas-song",
-    href: "/hold-you-like-a-secret",
+    itunes: "",
+    href: "/beccas-song",
+    musicIcon: true,
   },
   {
     title: "Happy Ever After",
@@ -44,12 +44,12 @@ export const music = [
     artwork: "/avatar.png",
     tidal: "",
     spotify:
-      "https://open.spotify.com/track/1OpjuVJwtH1Gduj5JCd47t?si=02504989103748f5",
-    appleMusic:
-      "https://music.apple.com/us/album/beccas-song/1707859090?i=1707859092",
+      "https://open.spotify.com/track/4ArRymlVaLt722cES9BFqv?si=245fd8a43e264aeb",
+    appleMusic: "",
     amazonMusic: "",
-    itunes: "https://benjaminalan.bandcamp.com/track/beccas-song",
+    itunes: "",
     href: "/happy-ever-after",
+    musicIcon: true,
   },
   {
     title: "Catch 22",
@@ -57,12 +57,12 @@ export const music = [
     artwork: "/avatar.png",
     tidal: "",
     spotify:
-      "https://open.spotify.com/track/1OpjuVJwtH1Gduj5JCd47t?si=02504989103748f5",
-    appleMusic:
-      "https://music.apple.com/us/album/beccas-song/1707859090?i=1707859092",
+      "https://open.spotify.com/track/3COXmEgoC1WUBrYSUFiYJI?si=cf9b66cf48c74928",
+    appleMusic: "",
     amazonMusic: "",
-    itunes: "https://benjaminalan.bandcamp.com/track/beccas-song",
-    href: "/hold-you-like-a-secret",
+    itunes: "",
+    href: "/catch22",
+    musicIcon: true,
   },
   {
     title: "Love Me or Leave Me",
@@ -70,12 +70,12 @@ export const music = [
     artwork: "/avatar.png",
     tidal: "",
     spotify:
-      "https://open.spotify.com/track/1OpjuVJwtH1Gduj5JCd47t?si=02504989103748f5",
-    appleMusic:
-      "https://music.apple.com/us/album/beccas-song/1707859090?i=1707859092",
+      "https://open.spotify.com/track/4Y3a3C0uCqJdXIhXzGOtPg?si=7abf1740425a4d72",
+    appleMusic: "",
     amazonMusic: "",
-    itunes: "https://benjaminalan.bandcamp.com/track/beccas-song",
+    itunes: "",
     href: "/love-me-or-leave-me",
+    musicIcon: true,
   },
   {
     title: "Liar",
@@ -83,11 +83,11 @@ export const music = [
     artwork: "/avatar.png",
     tidal: "",
     spotify:
-      "https://open.spotify.com/track/1OpjuVJwtH1Gduj5JCd47t?si=02504989103748f5",
-    appleMusic:
-      "https://music.apple.com/us/album/beccas-song/1707859090?i=1707859092",
+      "https://open.spotify.com/track/6wSbwYohLqt8nKfUueAZ88?si=f4cc25e63f364abb",
+    appleMusic: "",
     amazonMusic: "",
-    itunes: "https://benjaminalan.bandcamp.com/track/beccas-song",
+    itunes: "",
     href: "/liar",
+    musicIcon: true,
   },
 ];
