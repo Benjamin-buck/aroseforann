@@ -2,7 +2,7 @@ import { FaSpotify } from "react-icons/fa";
 import { SiTidal } from "react-icons/si";
 import { SiApplemusic } from "react-icons/si";
 import Link from "next/link";
-import { music } from "@/constants/data";
+import { music } from "@/constants/music";
 import { SiAmazonmusic } from "react-icons/si";
 import Image from "next/image";
 import { BsFillCartPlusFill } from "react-icons/bs";
