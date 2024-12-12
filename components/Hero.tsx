@@ -20,7 +20,14 @@ const Hero = () => {
         </button> */}
       </div>
       <div className="flex-1 flex items-center">
-        <Image src="/band.png" width={1920} height={834} alt="band photo" />
+        {/* <Image src="/band.png" width={1920} height={834} alt="band photo" /> */}
+        <Image
+          src="/avatar.png"
+          width={1000}
+          height={1000}
+          alt="band photo"
+          className="scale-50"
+        />
       </div>
     </div>
   );
