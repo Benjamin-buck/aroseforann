@@ -57,7 +57,7 @@ const LinksPage = () => {
         <h2 className="text-3xl font-semibold text-center">Streaming Links:</h2>
 
         {music.map((link) => (
-          <Link href={link.href} key={link.href}>
+          <Link href={link.spotify} key={link.spotify}>
             <button className="hover:bg-black bg-red-500 w-full py-4 text-xl font-bold rounded-xl flex gap-4 items-center justify-center">
               {link.musicIcon && <FaSpotify className="text-3xl" />}
               {link.title}
