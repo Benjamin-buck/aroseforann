@@ -20,11 +20,11 @@ const Tour = () => {
         </TableCaption> */}
         <TableHeader>
           <TableRow className="text-lg hover:bg-transparent">
-            <TableHead className="w-[200px] text-brand-red font-semibold">
+            <TableHead className="w-[200px] max-md:w-auto text-brand-red font-semibold">
               Date
             </TableHead>
             <TableHead className="text-brand-red font-semibold">City</TableHead>
-            <TableHead className="text-brand-red font-semibold">
+            <TableHead className="text-brand-red font-semibold max-lg:hidden">
               Venue
             </TableHead>
             <TableHead className="text-right text-brand-red font-semibold">
@@ -37,7 +37,7 @@ const Tour = () => {
             <TableRow className="hover:bg-transparent" key={date}>
               <TableCell className="text-lg">{date}</TableCell>
               <TableCell className="text-lg">{city}</TableCell>
-              <TableCell className="text-lg">{venue}</TableCell>
+              <TableCell className="text-lg max-lg:hidden">{venue}</TableCell>
               <TableCell className="text-right text-lg space-x-3">
                 {tickets ? (
                   <Link href={tickets}>
