@@ -15,13 +15,13 @@ export const supportLinks = [
 ];
 
 export const tourDates = [
-  // {
-  //   city: "Ottawa",
-  //   venue: "Scotiabank Arena",
-  //   date: "Nov 24, 2024",
-  //   ticketUrl: "http://www.ticketmaster.com",
-  //   rsvp: "http://www.ticketmaster.com",
-  // },
+  {
+    city: "Ottawa",
+    venue: "Avant Garde",
+    date: "April 4, 2025",
+    tickets: "",
+    rsvp: "",
+  },
 ];
 
 export const socialMedia = [
