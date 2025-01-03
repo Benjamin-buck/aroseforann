@@ -46,9 +46,7 @@ const Tour = () => {
                     </button>
                   </Link>
                 ) : (
-                  <button className="bg-brand-red hover:bg-gray-800 transition-all duration-200 px-4 py-1 rounded-md font-semibold">
-                    Tickets Coming Soon!
-                  </button>
+                  <p>Coming Soon</p>
                 )}
                 {rsvp && (
                   <Link href={rsvp} className="max-md:hidden">
