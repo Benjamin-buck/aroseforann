@@ -18,7 +18,7 @@ export const tourDates = [
   {
     city: "Ottawa",
     venue: "Avant Garde",
-    date: "April 4, 2025",
+    date: "April 20, 2025",
     tickets: "",
     rsvp: "",
   },
