@@ -16,6 +16,20 @@ export const supportLinks = [
 
 export const tourDates = [
   {
+    city: "Montreal, QB",
+    venue: "Barfly",
+    date: "April 4, 2025",
+    tickets: "",
+    rsvp: "",
+  },
+  {
+    city: "Kingston, ON",
+    venue: "Overtime Sports Bar",
+    date: "April 5, 2025",
+    tickets: "",
+    rsvp: "",
+  },
+  {
     city: "Ottawa",
     venue: "Avant Garde",
     date: "April 20, 2025",
