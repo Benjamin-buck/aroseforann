@@ -26,7 +26,7 @@ export const tourDates = [
     city: "Kingston, ON",
     venue: "Overtime Sports Bar",
     date: "April 5, 2025",
-    tickets: "",
+    tickets: "https://www.revelree.ca/event/cruel-hope-events-kingston",
     rsvp: "",
   },
   {
