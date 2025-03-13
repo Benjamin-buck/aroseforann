@@ -13,7 +13,7 @@ const Hero = () => {
           Come see us <span className="text-brand-red">perform live</span>!
         </h1>
         <p className="text-lg">
-          We have 3 brand new tour dates out now on our website. We'll be
+          We have 3 brand new tour dates out now on our website. We&apos;ll be
           stopping in Montreal, Kingston, and Ottawa!
         </p>
         <Link href="#tour">
