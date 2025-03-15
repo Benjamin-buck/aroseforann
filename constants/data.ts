@@ -33,7 +33,8 @@ export const tourDates = [
     city: "Ottawa",
     venue: "Avant Garde",
     date: "April 20, 2025",
-    tickets: "",
+    tickets:
+      "https://kanaska.com/book-me-1/ola/services/420-smoke-show-advance-ticket",
     rsvp: "",
   },
 ];
