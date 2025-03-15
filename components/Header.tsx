@@ -9,11 +9,18 @@ const Header = () => {
         width={1920}
         height={1000}
         alt="Header image"
-        className="h-[600px] w-full object-cover"
+        className="h-[600px] w-full object-cover opacity-60"
       />
       <div className="absolute top-0 left-0 w-full h-full flex items-center max-md:px-5 px-[100px]">
         <div className="max-md:text-center">
-          <h2 className="text-5xl font-bold">Better Off Broken Tour</h2>
+          <Image
+            src="/broken.png"
+            width={600}
+            height={300}
+            alt="Better off broken tour"
+            className="relative -left-[10px]"
+          />
+          {/* <h2 className="text-5xl font-bold">Better Off Broken Tour</h2> */}
           <p>Come see us perform our new album Better Off Broken live!</p>
 
           <button className="bg-red-500 text-white font-semibold px-8 py-2 rounded-lg mt-3">

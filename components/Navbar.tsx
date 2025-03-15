@@ -3,9 +3,7 @@ import { navbarLinks } from "@/constants/data";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
-import { FaSpotify } from "react-icons/fa";
-import { IoLogoInstagram, IoMenu } from "react-icons/io5";
-import { SiApplemusic } from "react-icons/si";
+import { IoMenu } from "react-icons/io5";
 
 const Navbar = () => {
   const [mobileNav, setMobileNav] = useState(false);
@@ -14,8 +12,8 @@ const Navbar = () => {
     if (mobileNav === false) setMobileNav(true);
   }
   return (
-    <div className="z-10">
-      <div className="bg-black py-2 font-semibold">
+    <div className="z-10 max-sm:px-6">
+      {/* <div className="bg-gray-800 py-2 font-semibold">
         <div className="mx-auto container flex justify-between max-md:px-6 items-center">
           <p className="max-md:hidden">
             Sign up for the A Rose For Ann fanclub!
@@ -50,9 +48,9 @@ const Navbar = () => {
                 Register
               </Link>
             </li>
-          </ul> */}
+          </ul>
         </div>
-      </div>
+      </div> */}
 
       <div className="py-5 max-sm:px-6">
         <div className="mx-auto container flex justify-between items-center">
