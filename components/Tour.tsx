@@ -12,7 +12,7 @@ import Link from "next/link";
 
 const Tour = () => {
   return (
-    <div id="tour" className="mb-[400px]">
+    <div id="tour" className="mb-[400px] max-md:px-8">
       <h2 className="text-5xl font-semibold text-center">Tour Dates</h2>
       <Table className="container mx-auto my-8">
         {/* <TableCaption className="text-lg">
