@@ -2,7 +2,6 @@ export const navbarLinks = [
   { label: "Home", href: "/" },
   { label: "Tour", href: "/#tour" },
   { label: "Music", href: "/music" },
-  { label: "Merch", href: "http://shop.aroseforann.com/" },
   { label: "Contact", href: "/contact" },
   // { label: "Merch", href: "/merch" },
   // { label: "Blog", href: "/blog" },

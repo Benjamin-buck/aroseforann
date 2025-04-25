@@ -74,6 +74,16 @@ const Navbar = () => {
                 </Link>
               </li>
             ))}
+
+            <li>
+              <Link
+                target="_blank"
+                href="https://shop.aroseforann.com/"
+                className="text-lg font-semibold hover:text-brand-red transition-all duration-300"
+              >
+                Shop
+              </Link>
+            </li>
           </ul>
           <IoMenu
             className="text-4xl max-sm:block hidden"

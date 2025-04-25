@@ -41,6 +41,11 @@ const LinksPage = () => {
             Website
           </button>
         </Link>
+        <Link href="/" target="_blank">
+          <button className="hover:bg-black bg-black w-full py-4 text-xl font-bold rounded-xl">
+            Website
+          </button>
+        </Link>
         <Link href="https://open.spotify.com/artist/2TFcpb3xDt8tdmRfWdW48W?si=7JyGgNDZQRmxPv3SlRID8Q">
           <button className="hover:bg-black bg-green-500 w-full py-4 text-xl font-bold rounded-xl flex gap-4 items-center justify-center">
             <FaSpotify className="text-3xl" />
