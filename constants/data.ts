@@ -1,6 +1,6 @@
 export const navbarLinks = [
   { label: "Home", href: "/" },
-  { label: "Tour", href: "/#tour" },
+  { label: "Tour", href: "/tour" },
   { label: "Music", href: "/music" },
   { label: "Contact", href: "/contact" },
   // { label: "Merch", href: "/merch" },

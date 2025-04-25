@@ -7,10 +7,6 @@ export default function Home() {
       <section className="mb-[200px]">
         <Header />
       </section>
-
-      <section>
-        <Tour />
-      </section>
     </div>
   );
 }
