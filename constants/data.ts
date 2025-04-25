@@ -16,20 +16,20 @@ export const supportLinks = [
 ];
 
 export const tourDates = [
-  // {
-  //   city: "Montreal, QB",
-  //   venue: "Barfly",
-  //   date: "April 4, 2025",
-  //   tickets: "",
-  //   rsvp: "",
-  // },
-  // {
-  //   city: "Kingston, ON",
-  //   venue: "Overtime Sports Bar",
-  //   date: "April 5, 2025",
-  //   tickets: "https://www.revelree.ca/event/cruel-hope-events-kingston",
-  //   rsvp: "",
-  // },
+  {
+    city: "Montreal, QC",
+    venue: "Barfly",
+    date: "July 18, 2025",
+    tickets: "https://1jbrii-ed.myshopify.com/products/july-18-a-rose-for-ann-barfly",
+    rsvp: "",
+  },
+  {
+    city: "Cornwall, ON",
+    venue: "Lola's Pub & Grill",
+    date: "July 26, 2025",
+    tickets: "https://1jbrii-ed.myshopify.com/products/july-26-a-rose-for-ann-lolas",
+    rsvp: "",
+  },
 ];
 
 export const socialMedia = [
