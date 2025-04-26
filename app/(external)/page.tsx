@@ -1,5 +1,4 @@
 import Header from "@/components/Header";
-import Tour from "@/components/Tour";
 
 export default function Home() {
   return (
