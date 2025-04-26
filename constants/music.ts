@@ -1,5 +1,18 @@
 export const music = [
   {
+    title: "Game 2 You (Coming May 2, 2025)",
+    duration: "2:21",
+    artwork: "/game2you.PNG",
+    tidal: "",
+    spotify:
+      "https://open.spotify.com/track/1A2EJiDq6JzqLxs0V6BrBl?si=abd56a3f74d04ff9",
+    appleMusic: "",
+    amazonMusic: "",
+    itunes: "",
+    href: "/hold-you-like-a-secret",
+    musicIcon: true,
+  },
+  {
     title: "Hold You Like a Secret",
     duration: "2:21",
     artwork: "/avatar.png",
