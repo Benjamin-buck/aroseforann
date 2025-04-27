@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Header = () => {
@@ -21,9 +22,11 @@ const Header = () => {
             Our latest single Game 2 You is coming out on May 3, 2025! Presave
             the track so you dont miss out on release day.
           </p>
-          <button className="bg-red-500 text-white px-6 py-3 text-lg font-semibold rounded-lg mt-6 hover:bg-red-700">
-            Pre-Save on Spotify
-          </button>
+          <Link href="https://distrokid.com/hyperfollow/aroseforann/game-2-you">
+            <button className="bg-red-500 text-white px-6 py-3 text-lg font-semibold rounded-lg mt-6 hover:bg-red-700">
+              Pre-Save on Spotify
+            </button>
+          </Link>
         </div>
       </div>
     </div>

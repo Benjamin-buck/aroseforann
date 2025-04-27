@@ -114,6 +114,14 @@ const Navbar = () => {
                 {label}
               </Link>
             ))}
+
+            <Link
+              target="_blank"
+              href="https://shop.aroseforann.com/"
+              className="border-b w-full text-center py-4 text-3xl font-semibold"
+            >
+              Shop
+            </Link>
           </ul>
         </div>
       )}
