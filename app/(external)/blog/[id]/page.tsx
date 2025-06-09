@@ -1,17 +1,30 @@
 // app/(external)/blog/[id]/page.tsx
 
 import { notFound } from "next/navigation";
+import { Metadata } from "next";
 
-const IndividualBlogPage = async ({ params }: { params: { id: string } }) => {
+type PageProps = {
+  params: {
+    id: string;
+  };
+};
+
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
+  return {
+    title: `Blog Post ${params.id} | A Rose for Ann`,
+  };
+}
+
+export default async function IndividualBlogPage({ params }: PageProps) {
   const getPostById = async (id: string) => {
     const res = await fetch(
       `https://headlesscms.aroseforann.com/wp-json/wp/v2/posts/${id}`,
-      { next: { revalidate: 60 } } // Optional: ISR caching
+      { next: { revalidate: 60 } } // Optional caching
     );
 
-    if (!res.ok) {
-      return null;
-    }
+    if (!res.ok) return null;
 
     return res.json();
   };
@@ -40,6 +53,4 @@ const IndividualBlogPage = async ({ params }: { params: { id: string } }) => {
       </div>
     </div>
   );
-};
-
-export default IndividualBlogPage;
+}
