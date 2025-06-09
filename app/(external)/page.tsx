@@ -1,6 +1,7 @@
 import About from "@/components/About";
 import Header from "@/components/Header";
 import Members from "@/components/Members";
+import Press from "@/components/Press";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
         <Header />
         <About />
         <Members />
+        <Press />
       </section>
     </div>
   );
