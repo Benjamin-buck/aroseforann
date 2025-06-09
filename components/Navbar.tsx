@@ -94,7 +94,7 @@ const Navbar = () => {
 
       {/* Mobile Navigation */}
       {mobileNav && (
-        <div className="bg-black h-[100vh] w-full z-10 absolute top-0 stop-scrolling">
+        <div className="bg-black w-[100dvw] h-[100vh] z-[100] absolute top-0 left-0 stop-scrolling">
           <Image
             src="/aroseforann-logo-black.png"
             height={101}
@@ -108,7 +108,7 @@ const Navbar = () => {
               <Link
                 href={href}
                 onClick={handleClick}
-                className="border-b w-full text-center py-4 text-3xl font-semibold"
+                className=" w-full text-center py-4 text-3xl font-semibold"
                 key={href}
               >
                 {label}
@@ -118,7 +118,7 @@ const Navbar = () => {
             <Link
               target="_blank"
               href="https://shop.aroseforann.com/"
-              className="border-b w-full text-center py-4 text-3xl font-semibold"
+              className=" w-full text-center py-4 text-3xl font-semibold"
             >
               Shop
             </Link>
