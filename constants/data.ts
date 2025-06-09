@@ -16,17 +16,32 @@ export const supportLinks = [
 
 export const tourDates = [
   {
+    city: "Kingston, ON",
+    venue: "Overtime Sports Bar",
+    date: "July 17, 2025",
+    tickets: "",
+    rsvp: "",
+  },
+  {
     city: "Montreal, QC",
     venue: "Barfly",
     date: "July 18, 2025",
-    tickets: "https://1jbrii-ed.myshopify.com/products/july-18-a-rose-for-ann-barfly",
+    tickets: "",
     rsvp: "",
   },
   {
     city: "Cornwall, ON",
     venue: "Lola's Pub & Grill",
-    date: "July 26, 2025",
-    tickets: "https://1jbrii-ed.myshopify.com/products/july-26-a-rose-for-ann-lolas",
+    date: "August 2, 2025",
+    tickets: "",
+    rsvp: "",
+  },
+  
+  {
+    city: "Cornwall, ON",
+    venue: "Cornwall Chaos",
+    date: "August 17, 2025",
+    tickets: "",
     rsvp: "",
   },
 ];
