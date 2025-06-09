@@ -1,13 +1,19 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Outfit } from "next/font/google";
 import "../globals.css";
 import Navbar from "@/components/Navbar";
 
-const geistSans = localFont({
-  src: "../fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+const DharmaPunk = localFont({
+  src: "../fonts/Dharma_Punk.ttf",
+  variable: "--font-DharmaPunk",
 });
+
+const outfit = Outfit({
+  variable: "--font-outfit",
+  subsets: ["latin"],
+});
+
 const geistMono = localFont({
   src: "../fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
@@ -27,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${DharmaPunk.variable} ${outfit.variable} ${geistMono.variable} antialiased`}
       >
         <Navbar />
         <div className="min-h-[55vh]">{children}</div>

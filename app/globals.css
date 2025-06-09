@@ -7,6 +7,12 @@ body {
   color: white;
 }
 
+@font-face {
+  font-family: "DharmaPunk";
+  src: url("/fonts/Dharma_Punk.ttf") format("ttf");
+  font-style: normal;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

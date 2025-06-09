@@ -4,29 +4,40 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="mx-auto container h-[600px] flex max-lg:flex-col">
-      <div className="lg:w-[50%] max-lg:px-12">
+    <div className="">
+      <div className="mx-auto relative container h-[80vh]">
         <Image
-          src="/game2you.PNG"
-          width={1000}
-          height={1000}
-          alt="Game To You Album Cover"
-          className="object-cover w-full h-full"
+          src="/bg-photo.png"
+          width={2080}
+          height={1920}
+          alt="band-photo"
+          className="object-cover h-full w-full"
         />
-      </div>
-      <div className="pl-12 flex items-center max-lg:mt-6">
-        <div>
-          <h2 className="text-xl font-bold text-red-500 ">New Release</h2>
-          <h1 className="text-5xl font-bold">Game 2 You</h1>
-          <p>
-            Our latest single Game 2 You is coming out on May 3, 2025! Presave
-            the track so you dont miss out on release day.
-          </p>
-          <Link href="https://distrokid.com/hyperfollow/aroseforann/game-2-you">
-            <button className="bg-red-500 text-white px-6 py-3 text-lg font-semibold rounded-lg mt-6 hover:bg-red-700">
-              Pre-Save on Spotify
-            </button>
-          </Link>
+        <div className="absolute top-0 left-0 size-full max-md:px-10">
+          <div>
+            <h2 className="text-[40px] font-DharmaPunk z-50 -rotate-2 absolute lg:top-[35%] top-[60%] lg:-left-2  text-brand-orange">
+              The Tour
+            </h2>
+            <h1 className="lg:text-[80px] text-[50px] max-md:text-center font-DharmaPunk absolute lg:top-[38%] top-[65%] z-10">
+              Better off Broken
+            </h1>
+          </div>
+          <div className="size-full flex items-center">
+            <div className=" w-full lg:mt-[100px] mt-[350px] lg:text-4xl text-2xl space-x-5">
+              <Link
+                href="/tour"
+                className="font-DharmaPunk  hover:text-white text-brand-orange"
+              >
+                Get Tickets
+              </Link>
+              <Link
+                href="https://shop.aroseforann.com"
+                className="font-DharmaPunk hover:text-white text-brand-orange"
+              >
+                Merchandise
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </div>
