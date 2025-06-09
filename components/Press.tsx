@@ -33,15 +33,18 @@ const Press = async () => {
           Latest Press
         </h2>
       </div>
-      <div className="mt-[100px] grid grid-cols-12 gap-6">
+      <div className="mt-[70px] grid grid-cols-12 gap-6 max-md:px-8 ">
         {posts.map((post: Post) => (
-          <div key={post.id} className="col-span-3">
+          <div
+            key={post.id}
+            className="col-span-12 lg:col-span-3 border rounded-lg border-gray-700"
+          >
             <img
               src={post.uagb_featured_image_src.large[0]}
               className="w-full h-[300px] rounded-[20px] object-cover"
               alt="test"
             />
-            <div className="mt-3">
+            <div className="mt-3 p-6">
               <h2 className="text-2xl font-Outfit font-semibold line-clamp-1">
                 {post.title.rendered}
               </h2>
@@ -49,6 +52,14 @@ const Press = async () => {
                 className="line-clamp-3"
                 dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }}
               />
+              <div className="flex w-full mt-3">
+                <Link
+                  href="/"
+                  className="bg-brand-orange w-full font-semibold hover:bg-orange-800 text-center py-2 rounded-lg"
+                >
+                  Read More
+                </Link>
+              </div>
             </div>
           </div>
         ))}
