@@ -9,9 +9,14 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        DharmaPunk: ['DharmaPunk'],
+        Outfit: ["var(--font-outfit)"],
+      },
+      
       colors: {
         brand: {
-          red: "#E51818",
+          orange: "#EA602E",
         },
         accent: {
           DEFAULT: "hsl(var(--accent))",
