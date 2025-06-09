@@ -54,7 +54,7 @@ const Press = async () => {
               />
               <div className="flex w-full mt-3">
                 <Link
-                  href="/"
+                  href={`/blog/${post.id}`}
                   className="bg-brand-orange w-full font-semibold hover:bg-orange-800 text-center py-2 rounded-lg"
                 >
                   Read More
