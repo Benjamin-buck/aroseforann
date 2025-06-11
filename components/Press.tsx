@@ -3,6 +3,7 @@
 import Link from "next/link";
 
 type Post = {
+  slug: string;
   id: string;
   title: {
     rendered: string;
@@ -54,7 +55,7 @@ const Press = async () => {
               />
               <div className="flex w-full mt-3">
                 <Link
-                  href={`/blog/${post.id}`}
+                  href={`/blog/${post.slug}`}
                   className="bg-brand-orange w-full font-semibold hover:bg-orange-800 text-center py-2 rounded-lg"
                 >
                   Read More
