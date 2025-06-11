@@ -1,21 +1,13 @@
-import React from "react";
-
 interface Props {
   params: {
-    slug: Promise<{ slug: string[] }>;
+    slug: string;
   };
 }
 const page = async ({ params }: Props) => {
-  const { slug } = params;
-
-  const getPost = async () => {
-    const res = await fetch(
-      `https://headlesscms.aroseforann.com/wp-json/wp/v2/posts?slug=${slug}`
-    );
-    return res.json();
-  };
-
-  const postData = await getPost();
+  const res = await fetch(
+    `https://headlesscms.aroseforann.com/wp-json/wp/v2/posts?slug=${params.slug}`
+  );
+  const postData = await res.json();
   const post = postData[0];
 
   return (
