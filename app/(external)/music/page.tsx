@@ -7,7 +7,8 @@ import { SiApplemusic } from "react-icons/si";
 const MusicPage = async () => {
   const getAllMusic = async () => {
     const res = await fetch(
-      "https://headlesscms.aroseforann.com/wp-json/wp/v2/song"
+      "https://headlesscms.aroseforann.com/wp-json/wp/v2/song",
+      { cache: "no-store" }
     );
     return res.json();
   };
