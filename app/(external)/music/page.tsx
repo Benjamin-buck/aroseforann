@@ -1,74 +1,47 @@
-import { FaSpotify } from "react-icons/fa";
-import { SiTidal } from "react-icons/si";
-import { SiApplemusic } from "react-icons/si";
+import { SongApiResponse } from "@/lib/types";
 import Link from "next/link";
-import { music } from "@/constants/music";
-import { SiAmazonmusic } from "react-icons/si";
-import Image from "next/image";
-import { BsFillCartPlusFill } from "react-icons/bs";
+import { BsSpotify } from "react-icons/bs";
+import { SiApplemusic } from "react-icons/si";
 
-const MusicPage = () => {
+/* eslint-disable @next/next/no-img-element */
+const MusicPage = async () => {
+  const getAllMusic = async () => {
+    const res = await fetch(
+      "https://headlesscms.aroseforann.com/wp-json/wp/v2/song"
+    );
+    return res.json();
+  };
+
+  const songs = await getAllMusic();
   return (
-    <div className="min-h-[70vh]">
-      <div className="mx-auto container mt-10">
-        <h1 className="text-4xl font-semibold text-center mb-6">Music</h1>
-        {music.map((song) => (
+    <div className="mx-auto container max-md:px-8">
+      <div className="font-DharmaPunk relative mb-[50px]">
+        <h3 className="text-[50px] text-brand-orange">Listen to</h3>
+        <h2 className="text-[70px] absolute top-8 ">Our Music</h2>
+      </div>
+      <div className="flex gap-2 flex-col ">
+        {songs.map((song: SongApiResponse) => (
           <div
-            key={song.title}
-            className="w-full bg-white text-black pl-3 pr-6 flex max-sm:flex-col max-sm:justify-normal max-sm:items-start max-sm:gap-4 justify-between items-center py-2 max-md:py-6 border-b"
+            key={song.id}
+            className="border border-gray-700 rounded w-full flex justify-between items-center"
           >
-            <div className="flex gap-5 items-center max-md:flex-col max-md:items-start">
-              <div className="flex gap-3">
-                <Image
-                  src={song.artwork}
-                  width={50}
-                  height={50}
-                  alt="Album Art"
-                  className="rounded-md"
-                />
-                <div>
-                  <Link
-                    href="/"
-                    className="text-xl font-bold hover:underline hover:text-red-500"
-                  >
-                    {song.title}
-                  </Link>
-                  <p>by A Rose for Ann</p>
-                </div>
-              </div>
+            <div className="flex gap-2 items-center">
+              <img
+                src={song.uagb_featured_image_src.large[0]}
+                className=" h-[75px] w-[75px] rounded object-cover"
+                alt="test"
+              />
+              <h2 className="text-xl font-semibold">{song.title.rendered}</h2>
             </div>
-            <div className="flex gap-3 items-center">
-              <p className="font-semibold max-md:hidden">Stream now:</p>
-              {song.tidal && (
-                <Link href={song.tidal}>
-                  <SiTidal className="text-3xl hover:text-red-500" />
+            <div className="pr-8">
+              {song.spotify_url && (
+                <Link href={song.spotify_url} target="_blank">
+                  <BsSpotify className="text-3xl" />
                 </Link>
               )}
-
-              {song.amazonMusic && (
-                <Link href={song.amazonMusic}>
-                  <SiAmazonmusic className="text-3xl" />
-                </Link>
-              )}
-
-              {song.appleMusic && (
-                <Link href={song.appleMusic}>
-                  <SiApplemusic className="text-3xl hover:text-red-500" />
-                </Link>
-              )}
-
-              {song.spotify && (
-                <Link href={song.spotify}>
-                  <FaSpotify className="text-3xl hover:text-red-500" />
-                </Link>
-              )}
-
-              {song.itunes && (
-                <Link href={song.itunes}>
-                  <button className="bg-black text-white font-semibold px-3 py-1 rounded-md hover:bg-red-500 max-md:hidden">
-                    Buy Now
-                  </button>
-                  <BsFillCartPlusFill className="max-md:block hidden text-3xl" />
+              {song.apple_music_url && (
+                <Link href={song.apple_music_url} target="_blank">
+                  <SiApplemusic className="text-3xl" />
                 </Link>
               )}
             </div>
