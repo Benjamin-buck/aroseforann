@@ -4,25 +4,25 @@
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 
-type PageProps = {
-  params: {
-    id: string;
-  };
-};
-
 export async function generateMetadata({
   params,
-}: PageProps): Promise<Metadata> {
+}: {
+  params: { id: string };
+}): Promise<Metadata> {
   return {
     title: `Blog Post ${params.id} | A Rose for Ann`,
   };
 }
 
-export default async function IndividualBlogPage({ params }: PageProps) {
+export default async function IndividualBlogPage({
+  params,
+}: {
+  params: { id: string };
+}) {
   const getPostById = async (id: string) => {
     const res = await fetch(
       `https://headlesscms.aroseforann.com/wp-json/wp/v2/posts/${id}`,
-      { next: { revalidate: 60 } } // Optional caching
+      { next: { revalidate: 60 } }
     );
 
     if (!res.ok) return null;
