@@ -15,8 +15,9 @@ type PageProps = {
 };
 
 export default async function BlogPost({ params }: PageProps) {
+  const { slug } = await params;
   const res = await fetch(
-    `https://headlesscms.aroseforann.com/wp-json/wp/v2/posts?slug=${params.slug}`
+    `https://headlesscms.aroseforann.com/wp-json/wp/v2/posts?slug=${slug}`
   );
   const posts: PostType[] = await res.json();
 
