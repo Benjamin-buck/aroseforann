@@ -1,20 +1,31 @@
-interface Props {
-  params: {
-    slug: string;
-  };
-}
-const page = async ({ params }: Props) => {
+// app/(external)/blog/[slug]/page.tsx
+
+import React from "react";
+
+export default async function Page({ params }: { params: { slug: string } }) {
+  const { slug } = params;
+
   const res = await fetch(
-    `https://headlesscms.aroseforann.com/wp-json/wp/v2/posts?slug=${params.slug}`
+    `https://headlesscms.aroseforann.com/wp-json/wp/v2/posts?slug=${slug}`,
+    { cache: "no-store" } // for fresh data on each request
   );
-  const postData = await res.json();
-  const post = postData[0];
+
+  if (!res.ok) {
+    throw new Error("Failed to fetch post");
+  }
+
+  const posts = await res.json();
+  const post = posts[0];
+
+  if (!post) {
+    return <p>Post not found.</p>;
+  }
 
   return (
     <div>
-      <p>{post.title.rendered}</p>
+      <p>Slug is: {slug}</p>
+      <h1>{post.title.rendered}</h1>
+      <div dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
     </div>
   );
-};
-
-export default page;
+}
