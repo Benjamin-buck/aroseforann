@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 // app/(external)/blog/[id]/page.tsx
 
 import { notFound } from "next/navigation";
