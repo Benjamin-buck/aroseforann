@@ -3,9 +3,9 @@
 export default async function BlogSlugPage({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
-  const { slug } = params;
+  const { slug } = await params;
 
   const res = await fetch(
     `https://headlesscms.aroseforann.com/wp-json/wp/v2/posts?slug=${slug}`,
