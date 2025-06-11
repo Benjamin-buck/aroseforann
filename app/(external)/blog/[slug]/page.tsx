@@ -1,41 +1,29 @@
-// app/blog/[slug]/page.tsx
-import { notFound } from "next/navigation";
+import React from "react";
 
-type PostType = {
-  id: number;
-  title: { rendered: string };
-  content: { rendered: string };
-  date: string;
-};
-
-type PageProps = {
+interface Props {
   params: {
     slug: string;
   };
-};
+}
+const page = async ({ params }: Props) => {
+  const { slug } = params;
 
-export default async function BlogPost({ params }: PageProps) {
-  const { slug } = await params;
-  const res = await fetch(
-    `https://headlesscms.aroseforann.com/wp-json/wp/v2/posts?slug=${slug}`
-  );
-  const posts: PostType[] = await res.json();
+  const getPost = async () => {
+    const res = await fetch(
+      `https://headlesscms.aroseforann.com/wp-json/wp/v2/posts?slug=${slug}`
+    );
+    return res.json();
+  };
 
-  if (!posts.length) return notFound();
-
-  const post = posts[0];
+  const postData = await getPost();
+  const post = postData[0];
 
   return (
-    <article className="prose mx-auto p-4">
-      <h1>{post.title.rendered}</h1>
-      <p className="text-sm text-gray-500">
-        {new Date(post.date).toLocaleDateString()}
-      </p>
-      <div
-        dangerouslySetInnerHTML={{
-          __html: post.content.rendered,
-        }}
-      />
-    </article>
+    <div>
+      <p>Slug is: {slug}</p>
+      <p>{post.title.rendered}</p>
+    </div>
   );
-}
+};
+
+export default page;
