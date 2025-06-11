@@ -1,13 +1,15 @@
 // app/(external)/blog/[slug]/page.tsx
 
-import React from "react";
-
-export default async function Page({ params }: { params: { slug: string } }) {
+export default async function BlogSlugPage({
+  params,
+}: {
+  params: { slug: string };
+}) {
   const { slug } = params;
 
   const res = await fetch(
     `https://headlesscms.aroseforann.com/wp-json/wp/v2/posts?slug=${slug}`,
-    { cache: "no-store" } // for fresh data on each request
+    { cache: "no-store" }
   );
 
   if (!res.ok) {
@@ -23,7 +25,6 @@ export default async function Page({ params }: { params: { slug: string } }) {
 
   return (
     <div>
-      <p>Slug is: {slug}</p>
       <h1>{post.title.rendered}</h1>
       <div dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
     </div>
