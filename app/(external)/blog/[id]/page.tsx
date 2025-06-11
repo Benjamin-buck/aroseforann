@@ -2,12 +2,14 @@
 // app/(external)/blog/[id]/page.tsx
 
 import { notFound } from "next/navigation";
+import { use } from "react";
 
 export default async function IndividualBlogPage({
   params,
 }: {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 }) {
+  const { id } = use(params);
   const getPostById = async (id: string) => {
     const res = await fetch(
       `https://headlesscms.aroseforann.com/wp-json/wp/v2/posts/${id}`,
@@ -19,7 +21,7 @@ export default async function IndividualBlogPage({
     return res.json();
   };
 
-  const post = await getPostById(params.id);
+  const post = await getPostById(id);
 
   if (!post) return notFound();
 
