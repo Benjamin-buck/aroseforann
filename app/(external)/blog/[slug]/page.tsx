@@ -2,7 +2,7 @@ import React from "react";
 
 interface Props {
   params: {
-    slug: string;
+    slug: Promise<{ slug: string[] }>;
   };
 }
 const page = async ({ params }: Props) => {
@@ -20,7 +20,6 @@ const page = async ({ params }: Props) => {
 
   return (
     <div>
-      <p>Slug is: {slug}</p>
       <p>{post.title.rendered}</p>
     </div>
   );
