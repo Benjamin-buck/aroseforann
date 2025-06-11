@@ -2,17 +2,6 @@
 // app/(external)/blog/[id]/page.tsx
 
 import { notFound } from "next/navigation";
-import { Metadata } from "next";
-
-export async function generateMetadata({
-  params,
-}: {
-  params: { id: string };
-}): Promise<Metadata> {
-  return {
-    title: `Blog Post ${params.id} | A Rose for Ann`,
-  };
-}
 
 export default async function IndividualBlogPage({
   params,
