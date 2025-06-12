@@ -38,7 +38,7 @@ const MusicPage = async () => {
               />
               <Link
                 href={`/music/${song.slug}`}
-                className="text-xl font-semibold"
+                className="lg:text-xl text-md font-semibold "
               >
                 {song.title.rendered}
               </Link>

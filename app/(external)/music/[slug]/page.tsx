@@ -27,7 +27,7 @@ export default async function MusicSlugPag({
   }
 
   return (
-    <div className="mx-auto container">
+    <div className="mx-auto container max-md:px-8">
       <Back />
       {/* Song Metadata */}
       <section className="flex gap-4 mt-3">
