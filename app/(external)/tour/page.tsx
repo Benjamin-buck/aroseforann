@@ -19,7 +19,7 @@ const TourPage = async () => {
   console.log(tourDates);
   return (
     <div className="mx-auto container">
-      <div className="font-DharmaPunk relative max-md:mb-[50px]">
+      <div className="font-DharmaPunk relative mb-[50px]">
         <h3 className="text-[50px] font-DharmaPunk text-brand-orange max-md:px-10">
           Latest
         </h3>
@@ -27,7 +27,7 @@ const TourPage = async () => {
           Tour Dates
         </h2>
       </div>
-      <div className="flex flex-col gap-3 lg:mt-0 mt-[60px] mx-8">
+      <div className="flex flex-col gap-3 lg:mt-0 mt-[60px] max-md:mx-8">
         {tourDates.map((tour: TourPost) => (
           <div
             className="border border-gray-700 rounded-lg flex w-[100%] justify-between p-3"
