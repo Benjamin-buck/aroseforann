@@ -15,10 +15,14 @@ const MusicPage = async () => {
 
   const songs = await getAllMusic();
   return (
-    <div className="mx-auto container max-md:px-8">
+    <div className="mx-auto container max-md:px-8 mb-12">
       <div className="font-DharmaPunk relative mb-[50px]">
-        <h3 className="text-[50px] text-brand-orange">Listen to</h3>
-        <h2 className="text-[70px] absolute top-8 ">Our Music</h2>
+        <h3 className="text-[50px] font-DharmaPunk text-brand-orange">
+          Listen to
+        </h3>
+        <h2 className="text-[70px] font-DharmaPunk absolute top-8 ">
+          Our Music
+        </h2>
       </div>
       <div className="flex gap-2 flex-col ">
         {songs.map((song: SongApiResponse) => (
@@ -32,9 +36,14 @@ const MusicPage = async () => {
                 className=" h-[75px] w-[75px] rounded object-cover"
                 alt="test"
               />
-              <h2 className="text-xl font-semibold">{song.title.rendered}</h2>
+              <Link
+                href={`/music/${song.slug}`}
+                className="text-xl font-semibold"
+              >
+                {song.title.rendered}
+              </Link>
             </div>
-            <div className="pr-8">
+            <div className="pr-8 flex gap-4 items-center">
               {song.spotify_url && (
                 <Link href={song.spotify_url} target="_blank">
                   <BsSpotify className="text-3xl" />

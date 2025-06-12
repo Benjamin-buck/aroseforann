@@ -4,8 +4,12 @@ const Members = () => {
   return (
     <section className="mt-10 mx-auto container">
       <div className="font-DharmaPunk relative">
-        <h3 className="text-[50px] text-brand-orange max-md:px-10">Band</h3>
-        <h2 className="text-[70px] absolute top-8 max-md:left-10">Members</h2>
+        <h3 className="text-[50px] font-DharmaPunk text-brand-orange max-md:px-10">
+          Band
+        </h3>
+        <h2 className="text-[70px] font-DharmaPunk absolute top-8 max-md:left-10">
+          Members
+        </h2>
       </div>
       <div className=" mt-[80px] grid grid-cols-10 gap-10">
         <div className="lg:col-span-2 col-span-10 relative flex items-center justify-center flex-col ">

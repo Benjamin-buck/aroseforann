@@ -5,8 +5,10 @@ const About = () => {
     <div className="bg-[#0e0e0e] py-10">
       <div className="mx-auto container">
         <div className="font-DharmaPunk relative">
-          <h3 className="text-[50px] text-brand-orange max-md:px-10">About</h3>
-          <h2 className="text-[70px] absolute top-8 max-md:left-10">
+          <h3 className="text-[50px] font-DharmaPunk text-brand-orange max-md:px-10">
+            About
+          </h3>
+          <h2 className="text-[70px] font-DharmaPunk absolute top-8 max-md:left-10">
             The Band
           </h2>
         </div>

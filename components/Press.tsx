@@ -29,8 +29,10 @@ const Press = async () => {
   return (
     <section className="mx-auto container mt-[150px]">
       <div className="font-DharmaPunk relative">
-        <h3 className="text-[50px] text-brand-orange max-md:px-10">Read Our</h3>
-        <h2 className="text-[70px] absolute top-8 max-md:left-10">
+        <h3 className="text-[50px] font-DharmaPunk text-brand-orange max-md:px-10">
+          Read Our
+        </h3>
+        <h2 className="text-[70px] font-DharmaPunk absolute top-8 max-md:left-10">
           Latest Press
         </h2>
       </div>
