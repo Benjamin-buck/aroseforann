@@ -15,7 +15,7 @@ const Members = () => {
         <div className="lg:col-span-2 col-span-10 relative flex items-center justify-center flex-col ">
           <div className="w-[250px] h-[250px]">
             <Image
-              src="/default.webp"
+              src="/connor.png"
               width={1000}
               height={1000}
               alt="Benjamin Alan"
@@ -60,7 +60,7 @@ const Members = () => {
         <div className="lg:col-span-2 col-span-10  relative flex items-center justify-center flex-col ">
           <div className="w-[250px] h-[250px]">
             <Image
-              src="/default.webp"
+              src="/james.png"
               width={1000}
               height={1000}
               alt="Benjamin Alan"
@@ -75,7 +75,7 @@ const Members = () => {
         <div className="lg:col-span-2 col-span-10  relative flex items-center justify-center flex-col ">
           <div className="w-[250px] h-[250px]">
             <Image
-              src="/default.webp"
+              src="/mike.png"
               width={1000}
               height={1000}
               alt="Benjamin Alan"
