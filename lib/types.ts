@@ -72,16 +72,6 @@ export type SongApiResponse = {
   };
 };
 
-type Link = {
-  href: string;
-};
-
-type LinkWithHints = Link & {
-  targetHints: {
-    allow: string[];
-  };
-};
-
 type LinkWithEmbed = Link & {
   embeddable?: boolean;
 };
@@ -96,21 +86,6 @@ type BackgroundMeta = {
   desktop: BackgroundSettings;
   tablet: BackgroundSettings;
   mobile: BackgroundSettings;
-};
-
-type BackgroundSettings = {
-  "background-color": string;
-  "background-image": string;
-  "background-repeat": string;
-  "background-position": string;
-  "background-size": string;
-  "background-attachment": string;
-  "background-type": string;
-  "background-media": string;
-  "overlay-type": string;
-  "overlay-color": string;
-  "overlay-opacity": string;
-  "overlay-gradient": string;
 };
 
 export type TourPost = {
