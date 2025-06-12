@@ -19,7 +19,7 @@ const TourPage = async () => {
   console.log(tourDates);
   return (
     <div className="mx-auto container">
-      <div className="font-DharmaPunk relative mb-[50px]">
+      <div className="font-DharmaPunk relative max-md:mb-[50px]">
         <h3 className="text-[50px] font-DharmaPunk text-brand-orange max-md:px-10">
           Latest
         </h3>
