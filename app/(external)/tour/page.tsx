@@ -53,8 +53,8 @@ const TourPage = async () => {
             key={tour.id}
           >
             <div className="flex lg:items-center gap-2 flex-col lg:flex-row lg:gap-[150px] w-full text-xl font-semibold">
-              <p className="border w-[140px]">{tour.meta._tour_date}</p>
-              <p className="min-w-[200px] border">{tour.meta._tour_city}</p>
+              <p className=" w-[140px]">{tour.meta._tour_date}</p>
+              <p className="min-w-[200px] ">{tour.meta._tour_city}</p>
               <p>{tour.meta._tour_venue}</p>
             </div>
             <div className="flex gap-3 items-center">
