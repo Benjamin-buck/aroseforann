@@ -3,7 +3,6 @@ import localFont from "next/font/local";
 import { Outfit } from "next/font/google";
 import "../globals.css";
 import Navbar from "@/components/Navbar";
-import SocialBar from "@/components/SocialBar";
 
 const DharmaPunk = localFont({
   src: "../fonts/Dharma_Punk.ttf",
