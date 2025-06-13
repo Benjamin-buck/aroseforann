@@ -6,7 +6,9 @@ import { FaSpotify } from "react-icons/fa6";
 import { SiApplemusic } from "react-icons/si";
 import { FaFacebook } from "react-icons/fa";
 import { SiYoutubemusic } from "react-icons/si";
-import { music } from "@/constants/music";
+import { CgWebsite } from "react-icons/cg";
+import { TbShirt } from "react-icons/tb";
+import { Bus } from "lucide-react";
 
 const LinksPage = () => {
   return (
@@ -21,8 +23,12 @@ const LinksPage = () => {
         />
       </div>
       <div className="text-center">
-        <h1 className="text-3xl  font-bold">A Rose for Ann</h1>
-        <p>A Canadian pop-punk band. New music coming out soon!</p>
+        <h1 className="text-[80px] font-DharmaPunk text-brand-orange">
+          A Rose for Ann
+        </h1>
+        <p className="text-lg">
+          A Canadian pop-punk band from Kingston / Cornwall Ontario
+        </p>
         <div className="flex justify-center my-2 text-3xl gap-2">
           <Link href="http://www.instagram.com/arose4ann">
             <FaInstagram />
@@ -37,38 +43,40 @@ const LinksPage = () => {
       </div>
       <div className="my-8 flex flex-col gap-3">
         <Link href="/">
-          <button className="hover:bg-black bg-black w-full py-4 text-xl font-bold rounded-xl">
-            Website
+          <button className=" flex items-center justify-center gap-3 bg-brand-orange hover:bg-orange-800 w-full py-4 text-xl font-bold rounded-xl">
+            <CgWebsite /> View Website
           </button>
         </Link>
-        <Link href="/" target="_blank">
-          <button className="hover:bg-black bg-black w-full py-4 text-xl font-bold rounded-xl">
-            Website
+        <Link href="https://shop.aroseforann.com/">
+          <button className="flex items-center justify-center gap-3 bg-brand-orange hover:bg-orange-800 w-full py-4 text-xl font-bold rounded-xl">
+            <TbShirt /> Merch
           </button>
         </Link>
+        <Link href="/tour">
+          <button className="flex items-center justify-center gap-3 bg-brand-orange hover:bg-orange-800 w-full py-4 text-xl font-bold rounded-xl">
+            <Bus /> Tour Dates
+          </button>
+        </Link>
+        {/* <Link href="/blog">
+          <button className="flex items-center justify-center gap-3 bg-brand-orange hover:bg-orange-800 w-full py-4 text-xl font-bold rounded-xl">
+            <Bus /> Blog
+          </button>
+        </Link> */}
+
+        <div className="border my-2" />
+        <h2 className="text-3xl font-semibold text-center">Streaming Links:</h2>
         <Link href="https://open.spotify.com/artist/2TFcpb3xDt8tdmRfWdW48W?si=7JyGgNDZQRmxPv3SlRID8Q">
-          <button className="hover:bg-black bg-green-500 w-full py-4 text-xl font-bold rounded-xl flex gap-4 items-center justify-center">
+          <button className="bg-brand-orange hover:bg-orange-800 w-full py-4 text-xl font-bold rounded-xl flex gap-4 items-center justify-center">
             <FaSpotify className="text-3xl" />
             Spotify
           </button>
         </Link>
         <Link href="https://music.apple.com/us/artist/a-rose-for-ann/1683716723">
-          <button className="hover:bg-black bg-red-500 w-full py-4 text-xl font-bold rounded-xl flex gap-4 items-center justify-center">
+          <button className="bg-brand-orange hover:bg-orange-800 w-full py-4 text-xl font-bold rounded-xl flex gap-4 items-center justify-center">
             <SiApplemusic className="text-3xl" />
             Apple Music
           </button>
         </Link>
-        <div className="border my-2" />
-        <h2 className="text-3xl font-semibold text-center">Streaming Links:</h2>
-
-        {music.map((link) => (
-          <Link href={link.spotify} key={link.spotify}>
-            <button className="hover:bg-black bg-red-500 w-full py-4 text-xl font-bold rounded-xl flex gap-4 items-center justify-center">
-              {link.musicIcon && <FaSpotify className="text-3xl" />}
-              {link.title}
-            </button>
-          </Link>
-        ))}
       </div>
     </div>
   );
