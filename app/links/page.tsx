@@ -23,9 +23,6 @@ const LinksPage = () => {
         />
       </div>
       <div className="text-center">
-        <h1 className="text-[80px] font-DharmaPunk text-brand-orange">
-          A Rose for Ann
-        </h1>
         <p className="text-lg">
           A Canadian pop-punk band from Kingston / Cornwall Ontario
         </p>

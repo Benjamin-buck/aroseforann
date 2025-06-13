@@ -5,13 +5,13 @@ import React from "react";
 const Header = () => {
   return (
     <div className="">
-      <div className="mx-auto relative container h-[80vh]">
+      <div className="mx-auto relative container h-[80%]">
         <Image
           src="/bg-photo.png"
           width={2080}
           height={1920}
           alt="band-photo"
-          className="object-cover h-full w-full"
+          className="object-cover h-full w-[100%]"
         />
         <div className="absolute top-0 left-0 size-full max-md:px-10">
           <div>
