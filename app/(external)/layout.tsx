@@ -36,7 +36,6 @@ export default function RootLayout({
       <body
         className={`${DharmaPunk.variable} ${outfit.variable} ${geistMono.variable} antialiased`}
       >
-        <SocialBar />
         <Navbar />
         <div className="min-h-[55vh]">{children}</div>
       </body>

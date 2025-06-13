@@ -4,8 +4,8 @@ import { BsFacebook, BsInstagram, BsTiktok } from "react-icons/bs";
 
 const SocialBar = () => {
   return (
-    <div className="w-full">
-      <div className="mx-auto container max-md:px-8 flex justify-end pt-2 gap-4">
+    <div>
+      <div className="mx-auto container items-center max-md:px-8 hidden lg:flex justify-end gap-4">
         <Link
           href="http://instagram.com/arose4ann"
           className="hover:text-brand-orange"

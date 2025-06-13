@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import { IoMenu } from "react-icons/io5";
+import SocialBar from "./SocialBar";
 
 const Navbar = () => {
   const [mobileNav, setMobileNav] = useState(false);
@@ -62,33 +63,36 @@ const Navbar = () => {
               alt="Logo"
             />
           </Link>
-          <ul className="flex gap-8 max-sm:hidden">
-            {navbarLinks.map(({ href, label }) => (
-              <li key={href}>
+          <div className="flex gap-6 justify-center items-center ">
+            <ul className="flex gap-8 max-sm:hidden items-center border-r pr-6">
+              {navbarLinks.map(({ href, label }) => (
+                <li key={href}>
+                  <Link
+                    href={href}
+                    className="text-lg font-semibold hover:text-brand-red transition-all duration-300"
+                    key={href}
+                  >
+                    {label}
+                  </Link>
+                </li>
+              ))}
+
+              <li>
                 <Link
-                  href={href}
+                  target="_blank"
+                  href="https://shop.aroseforann.com/"
                   className="text-lg font-semibold hover:text-brand-red transition-all duration-300"
-                  key={href}
                 >
-                  {label}
+                  Shop
                 </Link>
               </li>
-            ))}
-
-            <li>
-              <Link
-                target="_blank"
-                href="https://shop.aroseforann.com/"
-                className="text-lg font-semibold hover:text-brand-red transition-all duration-300"
-              >
-                Shop
-              </Link>
-            </li>
-          </ul>
-          <IoMenu
-            className="text-4xl max-sm:block hidden"
-            onClick={handleClick}
-          />
+            </ul>
+            <SocialBar />
+            <IoMenu
+              className="text-4xl max-sm:block hidden"
+              onClick={handleClick}
+            />
+          </div>
         </div>
       </div>
 
