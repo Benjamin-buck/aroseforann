@@ -7,16 +7,35 @@ import Link from "next/link";
 const TourPage = async () => {
   const getTourDates = async () => {
     const res = await fetch(
-      "https://headlesscms.aroseforann.com/wp-json/wp/v2/tour",
+      "https://headlesscms.aroseforann.com/wp-json/wp/v2/tour?orderby=date&order=asc",
       { cache: "no-store" }
     );
 
-    return res.json();
+    if (!res.ok) {
+      const errorText = await res.text();
+      console.error("Failed to fetch tour data:", errorText);
+      throw new Error("Could not fetch tour dates");
+    }
+
+    const data = await res.json();
+
+    // Sort by _tour_date field (ascending)
+    const sortedTours = data.sort(
+      (
+        a: { meta: { _tour_date: string | number | Date } },
+        b: { meta: { _tour_date: string | number | Date } }
+      ) => {
+        const dateA = new Date(a.meta?._tour_date);
+        const dateB = new Date(b.meta?._tour_date);
+        return dateA.getTime() - dateB.getTime();
+      }
+    );
+
+    return sortedTours;
   };
 
   const tourDates = await getTourDates();
 
-  console.log(tourDates);
   return (
     <div className="mx-auto container">
       <div className="font-DharmaPunk relative mb-[50px]">
@@ -34,8 +53,8 @@ const TourPage = async () => {
             key={tour.id}
           >
             <div className="flex lg:items-center gap-2 flex-col lg:flex-row lg:gap-[150px] w-full text-xl font-semibold">
-              <p>{tour.meta._tour_date}</p>
-              <p>{tour.meta._tour_city}</p>
+              <p className="border w-[140px]">{tour.meta._tour_date}</p>
+              <p className="min-w-[200px] border">{tour.meta._tour_city}</p>
               <p>{tour.meta._tour_venue}</p>
             </div>
             <div className="flex gap-3 items-center">
