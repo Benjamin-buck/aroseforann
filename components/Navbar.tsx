@@ -12,7 +12,7 @@ const Navbar = () => {
     if (mobileNav === false) setMobileNav(true);
   }
   return (
-    <div className="max-sm:px-6 z-50">
+    <div className="max-sm:px-6 z-50 border-b border-gray-700">
       {/* <div className="bg-gray-800 py-2 font-semibold">
         <div className="mx-auto container flex justify-between max-md:px-6 items-center">
           <p className="max-md:hidden">

@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import { Outfit } from "next/font/google";
 import "../globals.css";
 import Navbar from "@/components/Navbar";
+import SocialBar from "@/components/SocialBar";
 
 const DharmaPunk = localFont({
   src: "../fonts/Dharma_Punk.ttf",
@@ -35,6 +36,7 @@ export default function RootLayout({
       <body
         className={`${DharmaPunk.variable} ${outfit.variable} ${geistMono.variable} antialiased`}
       >
+        <SocialBar />
         <Navbar />
         <div className="min-h-[55vh]">{children}</div>
       </body>
