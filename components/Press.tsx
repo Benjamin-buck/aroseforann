@@ -20,7 +20,8 @@ type Post = {
 const Press = async () => {
   const getAllPosts = async () => {
     const res = await fetch(
-      "https://headlesscms.aroseforann.com/wp-json/wp/v2/posts?per_page=4"
+      "https://headlesscms.aroseforann.com/wp-json/wp/v2/posts?per_page=4",
+      { cache: "no-store" }
     );
     return res.json();
   };
