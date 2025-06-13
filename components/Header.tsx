@@ -5,7 +5,7 @@ import React from "react";
 const Header = () => {
   return (
     <div className="">
-      <div className="mx-auto relative container h-[80%]">
+      <div className="mx-auto relative container h-[80dvh]">
         <Image
           src="/bg-photo.png"
           width={2080}
