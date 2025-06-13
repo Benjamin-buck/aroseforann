@@ -11,7 +11,7 @@ export default async function BlogSlugPage({
   const { slug } = await params;
 
   const res = await fetch(
-    `https://headlesscms.aroseforann.com/wp-json/wp/v2/posts?slug=${slug}`,
+    `https://headlesscms.aroseforann.com/wp-json/wp/v2/posts?_embed?slug=${slug}`,
     { cache: "no-store" }
   );
 
