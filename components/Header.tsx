@@ -16,10 +16,10 @@ const Header = () => {
         <div className="absolute top-0 left-0 size-full max-md:px-10">
           <div>
             <h2 className="text-[40px] font-DharmaPunk z-50 -rotate-2 absolute lg:top-[35%] top-[60%] lg:-left-2  text-brand-orange">
-              New Single
+              The Tour
             </h2>
             <h1 className="lg:text-[80px] text-[50px] max-md:text-center font-DharmaPunk absolute lg:top-[38%] top-[65%] z-10">
-              Fucked Up In VeGas
+              Better off Broken
             </h1>
           </div>
           <div className="size-full flex items-center">
@@ -28,7 +28,7 @@ const Header = () => {
                 href="/tour"
                 className="font-DharmaPunk  hover:text-white text-brand-orange"
               >
-                Stream
+                Get Tickets
               </Link>
               <Link
                 href="https://shop.aroseforann.com"
