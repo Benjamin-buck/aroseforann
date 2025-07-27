@@ -14,3 +14,31 @@ export const tourDates = [
     RSVP: "https://www.facebook.com/p/Cornwall-Chaos-100082823157974/",
   },
 ];
+
+export const pastTourDates = [
+  {
+    date: "July 25, 2025",
+    venue: "Ribfest",
+    city: "Cornwall",
+  },
+  {
+    date: "July 18, 2025",
+    venue: "Barfly",
+    city: "Montreal",
+  },
+  {
+    date: "July 17, 2025",
+    venue: "Overtime Sports Bar",
+    city: "Kingston",
+  },
+  {
+    date: "April 5, 2025",
+    venue: "Overtime Sports Bar",
+    city: "Kingston",
+  },
+  {
+    date: "April 4, 2025",
+    venue: "Barfly",
+    city: "Montreal",
+  },
+];
