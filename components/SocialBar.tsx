@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { BsFacebook, BsInstagram, BsTiktok } from "react-icons/bs";
+import { BsFacebook, BsInstagram, BsTiktok, BsYoutube } from "react-icons/bs";
 
 const SocialBar = () => {
   return (
@@ -23,6 +23,12 @@ const SocialBar = () => {
           className="hover:text-brand-orange"
         >
           <BsTiktok size={20} />
+        </Link>
+        <Link
+          href="https://www.youtube.com/@ARoseforAnn"
+          className="hover:text-brand-orange"
+        >
+          <BsYoutube size={20} />
         </Link>
       </div>
     </div>
