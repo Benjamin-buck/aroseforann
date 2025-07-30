@@ -2,6 +2,7 @@ export const navbarLinks = [
   { label: "Home", href: "/" },
   { label: "Tour", href: "/tour" },
   // { label: "Music", href: "/music" },
+  { label: "Gallery", href: "/gallery" },
   { label: "Contact", href: "/contact" },
   // { label: "Merch", href: "/merch" },
   // { label: "Blog", href: "/blog" },

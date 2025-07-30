@@ -36,7 +36,7 @@ const About = () => {
           </div>
           <div className="h-[300px] lg:h-[500px] w-full">
             <Image
-              src="/bandphoto.png"
+              src="/ben.jpg"
               width={2000}
               height={1080}
               className="object-cover size-full rounded-2xl"
