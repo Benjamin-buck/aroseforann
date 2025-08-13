@@ -1,11 +1,5 @@
 export const tourDates = [
-  {
-    date: "August 2, 2025",
-    venue: "Lola's Bar & Grill",
-    city: "Cornwall",
-    tickets: "",
-    RSVP: "",
-  },
+  
   {
     date: "August 17, 2025",
     venue: "Benson Centre",
@@ -16,6 +10,13 @@ export const tourDates = [
 ];
 
 export const pastTourDates = [
+  {
+    date: "August 2, 2025",
+    venue: "Lola's Bar & Grill",
+    city: "Cornwall",
+    tickets: "",
+    RSVP: "",
+  },
   {
     date: "July 25, 2025",
     venue: "Ribfest",
