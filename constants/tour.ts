@@ -1,5 +1,15 @@
 export const tourDates = [
   {
+    date: "Nov 28, 2025",
+    venue: "Baldwin House",
+    city: "Cornwall",
+    tickets: "",
+    RSVP: "",
+  },
+];
+
+export const pastTourDates = [
+  {
     date: "August 2, 2025",
     venue: "Lola's Bar & Grill",
     city: "Cornwall",
@@ -13,9 +23,6 @@ export const tourDates = [
     tickets: "https://cornwalltourism.com/event/cornwall-chaos-3/",
     RSVP: "https://www.facebook.com/p/Cornwall-Chaos-100082823157974/",
   },
-];
-
-export const pastTourDates = [
   {
     date: "July 25, 2025",
     venue: "Ribfest",

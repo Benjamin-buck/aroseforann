@@ -1,3 +1,4 @@
+import { gallery } from "@/constants/gallery";
 import Image from "next/image";
 import React from "react";
 
@@ -13,20 +14,16 @@ const Gallery = () => {
         </h2>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 mt-[80px]">
-        <Image
-          src={"/ben.jpg"}
-          width={1000}
-          height={1000}
-          alt="Ben"
-          className="size-full object-cover"
-        />
-        <Image
-          src={"/bandphoto.png"}
-          width={1000}
-          height={1000}
-          alt="Ben"
-          className="size-full object-cover"
-        />
+        {gallery.map((photo) => (
+          <Image
+            key={photo}
+            src={photo}
+            width={1000}
+            height={1000}
+            alt="Ben"
+            className="size-full object-cover"
+          />
+        ))}
       </div>
     </div>
   );
