@@ -1,5 +1,15 @@
 export const tourDates = [
   {
+    date: "Nov 28, 2025",
+    venue: "Baldwin House",
+    city: "Cornwall",
+    tickets: "",
+    RSVP: "",
+  },
+];
+
+export const pastTourDates = [
+  {
     date: "August 17, 2025",
     venue: "Benson Centre",
     city: "Cornwall",
