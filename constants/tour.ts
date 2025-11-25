@@ -4,7 +4,7 @@ export const tourDates = [
     venue: "Mo Events",
     city: "Cornwall",
     tickets: "",
-    RSVP: "",
+    RSVP: "https://www.facebook.com/events/2584035058595700/",
   },
   {
     date: "Dec 21, 2025",
@@ -18,7 +18,7 @@ export const tourDates = [
     venue: "Best Western",
     city: "Cornwall",
     tickets: "",
-    RSVP: "https://www.facebook.com/events/2584035058595700/",
+    RSVP: "",
   },
 ];
 
