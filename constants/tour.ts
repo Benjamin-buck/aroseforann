@@ -9,7 +9,7 @@ export const tourDates = [
   {
     date: "Dec 21, 2025",
     venue: "L!ve On Elgin",
-    city: "Cornwall",
+    city: "Ottawa",
     tickets: "",
     RSVP: "",
   },
