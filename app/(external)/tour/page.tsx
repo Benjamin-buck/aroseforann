@@ -6,7 +6,7 @@ import { pastTourDates, tourDates } from "@/constants/tour";
 
 const TourPage = async () => {
   return (
-    <div className="mx-auto container">
+    <div className="mx-auto container mb-10">
       <div className="font-DharmaPunk relative mb-[50px]">
         <h3 className="text-[50px] font-DharmaPunk text-brand-orange max-md:px-10">
           Latest

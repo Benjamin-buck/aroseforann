@@ -1,10 +1,24 @@
 export const tourDates = [
   {
     date: "Nov 28, 2025",
-    venue: "Baldwin House",
+    venue: "Mo Events",
     city: "Cornwall",
     tickets: "",
     RSVP: "",
+  },
+  {
+    date: "Dec 21, 2025",
+    venue: "L!ve On Elgin",
+    city: "Cornwall",
+    tickets: "",
+    RSVP: "",
+  },
+  {
+    date: "Jan 31, 2026",
+    venue: "Best Western",
+    city: "Cornwall",
+    tickets: "",
+    RSVP: "https://www.facebook.com/events/2584035058595700/",
   },
 ];
 
