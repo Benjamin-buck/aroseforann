@@ -1,12 +1,5 @@
 export const tourDates = [
   {
-    date: "Nov 28, 2025",
-    venue: "Mo Events",
-    city: "Cornwall",
-    tickets: "",
-    RSVP: "https://www.facebook.com/events/2584035058595700/",
-  },
-  {
     date: "Dec 21, 2025",
     venue: "L!ve On Elgin",
     city: "Ottawa",
@@ -23,6 +16,13 @@ export const tourDates = [
 ];
 
 export const pastTourDates = [
+  {
+    date: "Nov 28, 2025",
+    venue: "Mo Events",
+    city: "Cornwall",
+    tickets: "",
+    RSVP: "https://www.facebook.com/events/2584035058595700/",
+  },
   {
     date: "August 17, 2025",
     venue: "Benson Centre",
