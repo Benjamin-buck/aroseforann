@@ -1,46 +1,47 @@
+import Countdown from "@/app/rejected/CountDown";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 const Header = () => {
   return (
-    <div className="">
-      <div className="mx-auto relative container h-[80dvh]">
-        <Image
-          src="/bg-photo.png"
-          width={2080}
-          height={1920}
-          alt="band-photo"
-          className="object-cover h-full w-[100%]"
-        />
-        <div className="absolute top-0 left-0 size-full max-md:px-10">
-          <div>
-            <h2 className="text-[40px] font-DharmaPunk z-50 -rotate-2 absolute lg:top-[35%] top-[60%] lg:-left-2  text-brand-orange">
-              The Tour
-            </h2>
-            <h1 className="lg:text-[80px] text-[50px] max-md:text-center font-DharmaPunk absolute lg:top-[38%] top-[65%] z-10">
-              Better off Broken
-            </h1>
-          </div>
-          <div className="size-full flex items-center">
-            <div className=" w-full lg:mt-[100px] mt-[350px] lg:text-4xl text-2xl space-x-5">
-              <Link
-                href="/tour"
-                className="font-DharmaPunk  hover:text-white text-brand-orange"
-              >
-                Get Tickets
-              </Link>
-              <Link
-                href="https://shop.aroseforann.com"
-                className="font-DharmaPunk hover:text-white text-brand-orange"
-              >
-                Merchandise
-              </Link>
-            </div>
-          </div>
+    <header className="relative h-[80dvh] w-full overflow-hidden">
+      {/* Background image */}
+      <Image
+        src="/background.svg"
+        alt="background"
+        fill
+        priority
+        className="object-cover"
+      />
+
+      {/* Optional overlay (darken/lighten background) */}
+      {/* <div className="absolute inset-0 bg-black/40" /> */}
+
+      {/* Content on top */}
+      <div className="relative z-10 flex h-full flex-col items-center justify-center gap-6">
+        <Image src="/rejected.svg" width={600} height={300} alt="rejected" />
+        <Countdown targetDate="2026-01-30T00:00:00" />
+        <div className="flex items-center gap-3">
+          <Link
+            href={"/rejected"}
+            className="font-Outfit text-xl border-2 px-5 py-2 rounded-lg hover:bg-black hover:border-none"
+          >
+            More Details
+          </Link>
+          <button className="font-Outfit text-xl border-2 px-5 py-2 rounded-lg hover:bg-black hover:border-none">
+            Shop Merchandise
+          </button>
+          <button className="font-Outfit text-xl border-2 px-5 py-2 rounded-lg hover:bg-black hover:border-none">
+            Tour Dates
+          </button>
+        </div>
+
+        <div className="container mx-auto text-center">
+          {/* Your links / nav / CTA here */}
         </div>
       </div>
-    </div>
+    </header>
   );
 };
 
