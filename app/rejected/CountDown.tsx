@@ -86,7 +86,7 @@ const Countdown = ({ targetDate }: CountdownProps) => {
 const TimeBox = ({ label, value }: { label: string; value: number }) => (
   <div className="flex flex-col">
     <span className="text-4xl font-bold">{value}</span>
-    <span className="uppercase tracking-wide text-white font-semibold text-lg">
+    <span className="uppercase tracking-wide text-white font-semibold text-lg drop-shadow-sm">
       {label}
     </span>
   </div>

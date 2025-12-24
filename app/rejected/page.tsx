@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import Countdown from "./CountDown";
 import { Facebook, Instagram } from "lucide-react";
@@ -8,8 +9,17 @@ import { SiApplemusic } from "react-icons/si";
 import { AiFillTikTok } from "react-icons/ai";
 
 const Rejected = () => {
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+
+  useEffect(() => {
+    audioRef.current?.play().catch(() => {
+      // Autoplay blocked — expected in many browsers
+      console.log("Autoplay blocked");
+    });
+  }, []);
   return (
     <div className="max-md:px-5 pb-10">
+      <audio ref={audioRef} src="/cinematic.mp3" preload="auto" />
       <div className="flex items-center justify-center pt-[150px] flex-col font-Outfit gap-5">
         <Image src={"/rejected.svg"} width={600} height={200} alt="rejected" />
         <div className="flex gap-2">
