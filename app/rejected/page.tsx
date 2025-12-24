@@ -46,7 +46,7 @@ const Rejected = () => {
               Don&apos;t Forget Me
             </p>
             <div>
-              <p>Reveal on 01/01/2026</p>
+              <p className="max-md:text-xs">Reveal on 01/01/2026</p>
               {/* <button className="bg-green-600 text-white p-3 rounded-lg font-semibold">
                 Pre-Save
               </button> */}
