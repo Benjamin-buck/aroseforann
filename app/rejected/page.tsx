@@ -10,7 +10,7 @@ import { AiFillTikTok } from "react-icons/ai";
 const Rejected = () => {
   return (
     <div className="max-md:px-5">
-      <div className="flex items-center justify-center pt-[300px] flex-col font-Outfit gap-5">
+      <div className="flex items-center justify-center pt-[150px] flex-col font-Outfit gap-5">
         <Image src={"/rejected.svg"} width={600} height={200} alt="rejected" />
         <div className="flex gap-2">
           <Link href="https://www.facebook.com/people/A-Rose-For-Ann/61569767095756/">
