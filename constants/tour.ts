@@ -1,12 +1,5 @@
 export const tourDates = [
   {
-    date: "Dec 21, 2025",
-    venue: "L!ve On Elgin",
-    city: "Ottawa",
-    tickets: "https://www.revelree.ca/event/lovemayhem2025/",
-    RSVP: "",
-  },
-  {
     date: "Jan 31, 2026",
     venue: "Best Western",
     city: "Cornwall",
@@ -23,6 +16,13 @@ export const tourDates = [
 ];
 
 export const pastTourDates = [
+  {
+    date: "Dec 21, 2025",
+    venue: "L!ve On Elgin",
+    city: "Ottawa",
+    tickets: "https://www.revelree.ca/event/lovemayhem2025/",
+    RSVP: "",
+  },
   {
     date: "Nov 28, 2025",
     venue: "Mo Events",
