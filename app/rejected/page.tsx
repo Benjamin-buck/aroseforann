@@ -2,10 +2,8 @@ import React from "react";
 import Image from "next/image";
 import Countdown from "./CountDown";
 import { Facebook, Instagram } from "lucide-react";
-import { BsSpotify } from "react-icons/bs";
 import Link from "next/link";
 import { FaSpotify } from "react-icons/fa";
-import { GrAppleMusic } from "react-icons/gr";
 import { SiApplemusic } from "react-icons/si";
 import { AiFillTikTok } from "react-icons/ai";
 

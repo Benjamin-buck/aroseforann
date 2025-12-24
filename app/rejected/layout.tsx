@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "../globals.css";
-import { Analytics } from "@vercel/analytics/react";
 import { Outfit } from "next/font/google";
 
 const DharmaPunk = localFont({
@@ -30,7 +29,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body
+        className={`${DharmaPunk.variable} ${outfit.variable} ${geistMono.variable} antialiased`}
+      >
         <div
           className="min-h-screen bg-no-repeat bg-cover bg-center bg-fixed"
           style={{
