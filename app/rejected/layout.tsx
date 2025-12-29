@@ -35,7 +35,7 @@ export default function RootLayout({
         <div
           className="min-h-screen bg-no-repeat bg-cover bg-center bg-fixed"
           style={{
-            backgroundImage: "url('/background.svg')",
+            backgroundImage: "url('/rejected-bg.png')",
           }}
         >
           {children}

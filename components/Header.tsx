@@ -8,7 +8,7 @@ const Header = () => {
     <header className="relative h-[80dvh] w-full overflow-hidden">
       {/* Background image */}
       <Image
-        src="/background.svg"
+        src="/rejected-bg.png"
         alt="background"
         fill
         priority
@@ -25,16 +25,22 @@ const Header = () => {
         <div className="flex items-center gap-3">
           <Link
             href={"/rejected"}
-            className="font-Outfit text-xl border-2 px-5 py-2 rounded-lg hover:bg-black hover:border-none"
+            className="font-Outfit text-xl border-2 px-5 py-2 rounded-lg hover:bg-black hover:border-none hover:border-2"
           >
             More Details
           </Link>
-          <button className="font-Outfit text-xl border-2 px-5 py-2 rounded-lg hover:bg-black hover:border-none">
+          <Link
+            href={"https://shop.aroseforann.com/"}
+            className="font-Outfit text-xl border-2 px-5 py-2 rounded-lg hover:bg-black hover:border-none hover:border-2"
+          >
             Shop Merchandise
-          </button>
-          <button className="font-Outfit text-xl border-2 px-5 py-2 rounded-lg hover:bg-black hover:border-none">
+          </Link>
+          <Link
+            href={"/tour"}
+            className="font-Outfit text-xl border-2 px-5 py-2 rounded-lg hover:bg-black hover:border-none hover:border-2"
+          >
             Tour Dates
-          </button>
+          </Link>
         </div>
 
         <div className="container mx-auto text-center">
