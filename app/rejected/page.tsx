@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Countdown from "./CountDown";
 import { Facebook, Instagram } from "lucide-react";
@@ -7,19 +7,13 @@ import Link from "next/link";
 import { FaSpotify } from "react-icons/fa";
 import { SiApplemusic } from "react-icons/si";
 import { AiFillTikTok } from "react-icons/ai";
+import MailchimpSubscribe from "@/components/MailchimpSubscribe";
 
 const Rejected = () => {
-  const audioRef = useRef<HTMLAudioElement | null>(null);
+  const [mailingList, setMailingList] = useState(false);
 
-  useEffect(() => {
-    audioRef.current?.play().catch(() => {
-      // Autoplay blocked — expected in many browsers
-      console.log("Autoplay blocked");
-    });
-  }, []);
   return (
     <div className="max-md:px-5 pb-10">
-      <audio ref={audioRef} src="/cinematic.mp3" preload="auto" />
       <div className="flex items-center justify-center pt-[150px] flex-col font-Outfit gap-5">
         <Image src={"/rejected.svg"} width={600} height={200} alt="rejected" />
         <div className="flex gap-2">
@@ -41,7 +35,20 @@ const Rejected = () => {
           </Link>
         </div>
         <Countdown targetDate="2026-01-30T00:00:00" />
+        <button
+          onClick={() => setMailingList(!mailingList)}
+          className="text-lg border-[3px] py-4 px-6 rounded-lg hover:cursor-pointer hover:bg-black drop-shadow-xs"
+        >
+          Join Our Mailing List And Get Notified
+        </button>
+        {mailingList && (
+          <div>
+            <h1>Join Our Newsletter</h1>
+            <MailchimpSubscribe />
+          </div>
+        )}
       </div>
+
       <div className="bg-white mt-10 max-w-[800px] mx-auto text-black p-4 rounded">
         <div className="flex items-center gap-4 py-2">
           <Image
