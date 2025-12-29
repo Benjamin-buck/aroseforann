@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Countdown from "./CountDown";
 import { Facebook, Instagram } from "lucide-react";
