@@ -16,7 +16,7 @@ const page = () => {
         <BiLeftArrow />
         Go Back
       </Link>
-      <div className="flex w-full items-center justify-center pt-[200px] drop-shadow-sm">
+      <div className="flex w-full items-center justify-center pt-[50px] drop-shadow-sm">
         <Image
           src={"/dont-forget-me-title.svg"}
           width={500}
@@ -46,7 +46,7 @@ const page = () => {
             <TabsTrigger value="music-video">Music Video</TabsTrigger>
             <TabsTrigger value="credits">Credits</TabsTrigger>
           </TabsList>
-          <TabsContent value="lyrics" className="py-5">
+          <TabsContent value="lyrics" className="py-5 max-md:text-md">
             <p className="font-bold">[Verse]</p>
             <p>When summer&apos;s over</p>
             <p>And you fly back to Tennessee</p>
