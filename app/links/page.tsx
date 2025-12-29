@@ -8,7 +8,7 @@ import { FaFacebook } from "react-icons/fa";
 import { SiYoutubemusic } from "react-icons/si";
 import { CgWebsite } from "react-icons/cg";
 import { TbShirt } from "react-icons/tb";
-import { Bus } from "lucide-react";
+import { Bus, Mail } from "lucide-react";
 
 const LinksPage = () => {
   return (
@@ -52,6 +52,11 @@ const LinksPage = () => {
         <Link href="/tour">
           <button className="flex items-center justify-center gap-3 bg-brand-orange hover:bg-orange-800 w-full py-4 text-xl font-bold rounded-xl">
             <Bus /> Tour Dates
+          </button>
+        </Link>
+        <Link href="/mailing-list">
+          <button className="flex items-center justify-center gap-3 bg-white text-black hover:bg-gray-600 hover:text-white w-full py-4 text-xl font-bold rounded-xl">
+            <Mail /> Sign Up For Our Mailing List (NEW)
           </button>
         </Link>
         {/* <Link href="/blog">
