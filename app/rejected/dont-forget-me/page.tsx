@@ -4,8 +4,6 @@ import React from "react";
 import { BiLeftArrow } from "react-icons/bi";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { BsSpotify, BsYoutube } from "react-icons/bs";
-import { GrAppleMusic } from "react-icons/gr";
-import { Apple } from "lucide-react";
 import { SiApplemusic } from "react-icons/si";
 
 const page = () => {
