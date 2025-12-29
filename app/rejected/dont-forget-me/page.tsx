@@ -46,7 +46,10 @@ const page = () => {
             <TabsTrigger value="music-video">Music Video</TabsTrigger>
             <TabsTrigger value="credits">Credits</TabsTrigger>
           </TabsList>
-          <TabsContent value="lyrics" className="py-5 max-md:text-md">
+          <TabsContent
+            value="lyrics"
+            className="py-5 md:text-md overflow-scroll"
+          >
             <p className="font-bold">[Verse]</p>
             <p>When summer&apos;s over</p>
             <p>And you fly back to Tennessee</p>
