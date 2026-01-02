@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Countdown from "./CountDown";
-import { Facebook, Instagram } from "lucide-react";
+import { Facebook, Instagram, Loader, Star } from "lucide-react";
 import Link from "next/link";
 import { FaSpotify } from "react-icons/fa";
 import { SiApplemusic } from "react-icons/si";
@@ -56,14 +56,15 @@ const Rejected = () => {
             width={60}
             height={60}
             alt="album"
-            className="rounded-lg blur-sm"
+            className="rounded-lg"
           />
           <div className="flex justify-between items-center w-full">
-            <p className="text-lg font-sembiold blur-[6px]">
-              Don&apos;t Forget Me
-            </p>
-            <div>
-              <p className="max-md:text-xs">Reveal on 01/01/2026</p>
+            <p className="text-lg font-sembiold">Don&apos;t Forget Me</p>
+            <div className="flex max-md:flex-col items-center gap-2">
+              <p>Jan 30, 2026 </p>
+              <p className="max-md:text-xs bg-red-500 text-white px-2 py-1 rounded-lg flex gap-1 items-center">
+                <Loader size={15} /> Just Revealed
+              </p>
               {/* <button className="bg-green-600 text-white p-3 rounded-lg font-semibold">
                 Pre-Save
               </button> */}
