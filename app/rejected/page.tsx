@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Countdown from "./CountDown";
-import { Facebook, Instagram, Loader, Star } from "lucide-react";
+import { Facebook, Instagram, Loader } from "lucide-react";
 import Link from "next/link";
 import { FaSpotify } from "react-icons/fa";
 import { SiApplemusic } from "react-icons/si";
