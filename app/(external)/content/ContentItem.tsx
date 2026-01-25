@@ -17,10 +17,10 @@ interface ContentProps {
 
 const ContentItem = ({ content }: ContentProps) => {
   return (
-    <div className="border rounded-lg">
+    <div className="border border-gray-800 rounded-lg overflow-hidden">
       <Image
         alt=""
-        className="opacity-80 h-[250px] overflow-hidden"
+        className="opacity-80 h-[250px] object-cover overflow-hidden"
         height={500}
         width={500}
         src={content.thumbnail}

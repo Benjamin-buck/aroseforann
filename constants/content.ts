@@ -1,5 +1,13 @@
 export const content = [
   {
+    id: 1003,
+    title: "Cant Stay Here - MGK (Cover/Remix) by A Rose for Ann",
+    date: "Jan 4, 2026",
+    thumbnail:
+      "https://i.ytimg.com/an_webp/0Iid1NTJsWM/mqdefault_6s.webp?du=3000&sqp=CN3g2csG&rs=AOn4CLBgxxeGt4WNnqoADuZjIA17Wcv9cg",
+    url: "https://www.youtube.com/watch?v=0Iid1NTJsWM",
+  },
+  {
     id: 1002,
     title: "YUNGBLUD - Zombie (Cover) by A Rose For Ann",
     date: "Dec 13, 2025",
