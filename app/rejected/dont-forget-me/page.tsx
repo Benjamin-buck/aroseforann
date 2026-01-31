@@ -50,7 +50,7 @@ const page = () => {
             value="lyrics"
             className="py-5 md:text-md overflow-scroll"
           >
-            <iframe
+            {/* <iframe
               width="560"
               height="315"
               className="rounded-2xl w-full mb-8"
@@ -60,7 +60,7 @@ const page = () => {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerpolicy="strict-origin-when-cross-origin"
               allowfullscreen
-            ></iframe>
+            ></iframe> */}
             <p className="font-bold">[Verse]</p>
             <p>When summer&apos;s over</p>
             <p>And you fly back to Tennessee</p>
