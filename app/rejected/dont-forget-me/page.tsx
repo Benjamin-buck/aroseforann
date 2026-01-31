@@ -42,8 +42,8 @@ const page = () => {
         <Tabs defaultValue="lyrics">
           <TabsList>
             <TabsTrigger value="lyrics">Lyrics</TabsTrigger>
-            <TabsTrigger value="lyric-video">Lyric Video</TabsTrigger>
-            <TabsTrigger value="music-video">Music Video</TabsTrigger>
+            {/* <TabsTrigger value="lyric-video">Lyric Video</TabsTrigger>
+            <TabsTrigger value="music-video">Music Video</TabsTrigger> */}
             <TabsTrigger value="credits">Credits</TabsTrigger>
           </TabsList>
           <TabsContent

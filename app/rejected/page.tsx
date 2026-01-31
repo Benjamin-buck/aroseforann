@@ -8,6 +8,7 @@ import { FaSpotify } from "react-icons/fa";
 import { SiApplemusic } from "react-icons/si";
 import { AiFillTikTok } from "react-icons/ai";
 import MailchimpSubscribe from "@/components/MailchimpSubscribe";
+import { GrAppleMusic } from "react-icons/gr";
 
 const Rejected = () => {
   const [mailingList, setMailingList] = useState(false);
@@ -61,13 +62,27 @@ const Rejected = () => {
           <div className="flex justify-between items-center w-full">
             <p className="text-lg font-sembiold">Don&apos;t Forget Me</p>
             <div className="flex max-md:flex-col items-center gap-2">
-              <p>Jan 30, 2026 </p>
-              <p className="max-md:text-xs bg-red-500 text-white px-2 py-1 rounded-lg flex gap-1 items-center">
-                <Loader size={15} /> Just Revealed
-              </p>
-              {/* <button className="bg-green-600 text-white p-3 rounded-lg font-semibold">
-                Pre-Save
-              </button> */}
+              <Link
+                href={
+                  "https://open.spotify.com/track/55YFLWX2XKWEO0uv1SSkaX?si=dca5d69f294648f5"
+                }
+              >
+                <FaSpotify size={30} />
+              </Link>
+              <Link
+                href={
+                  "https://music.apple.com/us/song/dont-forget-me/1866304648"
+                }
+              >
+                <SiApplemusic size={30} />
+              </Link>
+
+              <Link
+                href={"/rejected/dont-forget-me"}
+                className="bg-green-600 text-white p-3 rounded-lg font-semibold"
+              >
+                More Info
+              </Link>
             </div>
           </div>
         </div>
