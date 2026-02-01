@@ -2,13 +2,12 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Countdown from "./CountDown";
-import { Facebook, Instagram, Loader } from "lucide-react";
+import { Facebook, Instagram } from "lucide-react";
 import Link from "next/link";
 import { FaSpotify } from "react-icons/fa";
 import { SiApplemusic } from "react-icons/si";
 import { AiFillTikTok } from "react-icons/ai";
 import MailchimpSubscribe from "@/components/MailchimpSubscribe";
-import { GrAppleMusic } from "react-icons/gr";
 
 const Rejected = () => {
   const [mailingList, setMailingList] = useState(false);
