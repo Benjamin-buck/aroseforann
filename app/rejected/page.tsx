@@ -34,7 +34,7 @@ const Rejected = () => {
             <SiApplemusic size={22} />
           </Link>
         </div>
-        <Countdown targetDate="2026-01-30T00:00:00" />
+        <Countdown targetDate="2026-03-06T00:00:00" />
         <button
           onClick={() => setMailingList(!mailingList)}
           className="text-lg border-[3px] py-4 px-6 rounded-lg hover:cursor-pointer hover:bg-black drop-shadow-xs"
@@ -88,18 +88,18 @@ const Rejected = () => {
 
         <div className="flex items-center gap-4 py-2">
           <Image
-            src={"/dont-forget-me.png"}
+            src={"/chemistry.png"}
             width={60}
             height={60}
             alt="album"
-            className="rounded-lg blur-sm"
+            className="rounded-lg"
           />
           <div className="flex justify-between items-center w-full">
-            <p className="text-lg font-sembiold blur-[6px]">Chemistry</p>
+            <p className="text-lg font-sembiold">Chemistry</p>
             <div>
-              {/* <button className="bg-green-600 text-white p-3 rounded-lg font-semibold">
-                Pre-Save
-              </button> */}
+              <button className="bg-gray-500 text-white p-3 rounded-lg font-semibold">
+                Coming Feb 6, 2026
+              </button>
             </div>
           </div>
         </div>

@@ -1,14 +1,7 @@
 export const tourDates = [
   {
-    date: "Jan 31, 2026",
-    venue: "Best Western",
-    city: "Cornwall",
-    tickets: "",
-    RSVP: "",
-  },
-  {
-    date: "Feb 14, 2026",
-    venue: "Moose McGuire's Hunt Club (FREE)",
+    date: "Coming Soon",
+    venue: "Coming Soon",
     city: "Ottawa",
     tickets: "",
     RSVP: "",
@@ -16,6 +9,13 @@ export const tourDates = [
 ];
 
 export const pastTourDates = [
+  {
+    date: "Feb 14, 2026",
+    venue: "Moose McGuire's Hunt Club (FREE)",
+    city: "Ottawa",
+    tickets: "",
+    RSVP: "",
+  },
   {
     date: "Dec 21, 2025",
     venue: "L!ve On Elgin",

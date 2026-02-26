@@ -21,7 +21,7 @@ const Header = () => {
       {/* Content on top */}
       <div className="relative z-10 flex h-full flex-col items-center justify-center gap-6">
         <Image src="/rejected.svg" width={600} height={300} alt="rejected" />
-        <Countdown targetDate="2026-01-30T00:00:00" />
+        <Countdown targetDate="2026-03-06T00:00:00" />
         <div className="flex items-center gap-3">
           <Link
             href={"/rejected"}
@@ -33,7 +33,7 @@ const Header = () => {
             href={"https://shop.aroseforann.com/"}
             className="font-Outfit text-xl border-2 px-5 py-2 rounded-lg hover:bg-black hover:border-none hover:border-2"
           >
-            Shop Merchandise
+            Shop <span className="hidden lg:block">Merchandise</span>
           </Link>
           <Link
             href={"/tour"}
