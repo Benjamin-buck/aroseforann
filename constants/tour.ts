@@ -1,7 +1,7 @@
 export const tourDates = [
   {
-    date: "Coming Soon",
-    venue: "Coming Soon",
+    date: "May 1, 2026",
+    venue: "TBD",
     city: "Ottawa",
     tickets: "",
     RSVP: "",
