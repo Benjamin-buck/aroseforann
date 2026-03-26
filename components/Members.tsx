@@ -1,9 +1,16 @@
 import Image from "next/image";
 
+const members = [
+  { src: "/connor.png", name: "Connor Longaphie", role: "Drummer" },
+  { src: "/benjamin.jpg", name: "Benjamin Alan", role: "Singer / Guitarist" },
+  { src: "/james.png", name: "James Baron", role: "Rhythm Guitarist" },
+  { src: "/mike.png", name: "Mike Clayton", role: "Lead Guitarist" },
+];
+
 const Members = () => {
   return (
-    <section className="mt-10 mx-auto container">
-      <div className="font-DharmaPunk relative">
+    <section className="py-20 mx-auto container px-6 lg:px-8">
+      <div className="font-DharmaPunk relative mb-20">
         <h3 className="text-[50px] font-DharmaPunk text-brand-orange max-md:px-10">
           Band
         </h3>
@@ -11,68 +18,25 @@ const Members = () => {
           Members
         </h2>
       </div>
-      <div className=" mt-[80px] grid grid-cols-10 gap-10">
-        <div className="lg:col-span-2 col-span-10 relative flex items-center justify-center flex-col ">
-          <div className="w-[250px] h-[250px]">
-            <Image
-              src="/connor.png"
-              width={1000}
-              height={1000}
-              alt="Benjamin Alan"
-              className="size-full object-cover rounded-full top-0 left-0"
-            />
+      <div className="flex flex-wrap justify-center gap-12">
+        {members.map(({ src, name, role }) => (
+          <div key={name} className="flex flex-col items-center group">
+            <div className="w-[220px] h-[220px] relative rounded-full overflow-hidden ring-2 ring-transparent group-hover:ring-brand-orange transition-all duration-300">
+              <Image
+                src={src}
+                width={1000}
+                height={1000}
+                alt={name}
+                className="size-full object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 rounded-full" />
+            </div>
+            <div className="mt-4 flex flex-col items-center">
+              <p className="font-DharmaPunk text-3xl">{name}</p>
+              <p className="font-Outfit text-brand-orange text-lg">{role}</p>
+            </div>
           </div>
-          <div className="lg:col-span-2 col-span-10 mt-2 flex flex-col justify-center items-center">
-            <p className="font-DharmaPunk text-4xl">Connor Longaphie</p>
-            <p className="font-Outfit text-xl">Drummer</p>
-          </div>
-        </div>
-
-        <div className="lg:col-span-2 col-span-10  relative flex items-center justify-center flex-col ">
-          <div className="w-[250px] h-[250px]">
-            <Image
-              src="/benjamin.jpg"
-              width={1000}
-              height={1000}
-              alt="Benjamin Alan"
-              className="size-full object-cover rounded-full top-0 left-0"
-            />
-          </div>
-          <div className="lg:col-span-2 col-span-10 mt-2 flex flex-col justify-center items-center">
-            <p className="font-DharmaPunk text-4xl">Benjamin Alan</p>
-            <p className="font-Outfit text-xl">Singer / Guitarist</p>
-          </div>
-        </div>
-        <div className="lg:col-span-2 col-span-10  relative flex items-center justify-center flex-col ">
-          <div className="w-[250px] h-[250px]">
-            <Image
-              src="/james.png"
-              width={1000}
-              height={1000}
-              alt="Benjamin Alan"
-              className="size-full object-cover rounded-full top-0 left-0"
-            />
-          </div>
-          <div className="mt-2 flex flex-col justify-center items-center">
-            <p className="font-DharmaPunk text-4xl">James Baron</p>
-            <p className="font-Outfit text-xl">Rhythm Guitarist</p>
-          </div>
-        </div>
-        <div className="lg:col-span-2 col-span-10  relative flex items-center justify-center flex-col ">
-          <div className="w-[250px] h-[250px]">
-            <Image
-              src="/mike.png"
-              width={1000}
-              height={1000}
-              alt="Benjamin Alan"
-              className="size-full object-cover rounded-full top-0 left-0"
-            />
-          </div>
-          <div className="mt-2 flex flex-col justify-center items-center">
-            <p className="font-DharmaPunk text-4xl">Mike Clayton</p>
-            <p className="font-Outfit text-xl">Lead Guitarist</p>
-          </div>
-        </div>
+        ))}
       </div>
     </section>
   );
