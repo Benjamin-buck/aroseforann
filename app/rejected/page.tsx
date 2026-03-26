@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Countdown from "./CountDown";
-import { Facebook, Instagram } from "lucide-react";
+import { Facebook, Info, Instagram } from "lucide-react";
 import Link from "next/link";
 import { FaSpotify } from "react-icons/fa";
 import { SiApplemusic } from "react-icons/si";
@@ -60,7 +60,7 @@ const Rejected = () => {
           />
           <div className="flex justify-between items-center w-full">
             <p className="text-lg font-sembiold">Don&apos;t Forget Me</p>
-            <div className="flex max-md:flex-col items-center gap-2">
+            <div className="flex flex-row items-center gap-2">
               <Link
                 href={
                   "https://open.spotify.com/track/55YFLWX2XKWEO0uv1SSkaX?si=dca5d69f294648f5"
@@ -80,7 +80,8 @@ const Rejected = () => {
                 href={"/rejected/dont-forget-me"}
                 className="bg-green-600 text-white p-3 rounded-lg font-semibold"
               >
-                More Info
+                <span className="lg:block hidden">More Info</span>
+                <Info className="block lg:hidden" />
               </Link>
             </div>
           </div>
