@@ -4,6 +4,16 @@
 import Link from "next/link";
 import { pastTourDates } from "@/constants/tour";
 
+type Show = {
+  id: string;
+  title: string;
+  venue: string;
+  location: string;
+  date: string;
+  ticketsAvailable: boolean;
+  ticketUrl: string | null;
+};
+
 const TourPage = async () => {
   const res = await fetch("http://localhost:3000/api/v1/shows", {
     headers: {
@@ -24,7 +34,7 @@ const TourPage = async () => {
         </h2>
       </div>
       <div className="flex flex-col gap-3 lg:mt-0 mt-[60px] max-md:mx-8">
-        {tourDates.shows.map((tour) => (
+        {tourDates.shows.map((tour: Show) => (
           <div
             className="border border-gray-700 rounded-lg flex w-[100%] justify-between p-3"
             key={tour.id}
