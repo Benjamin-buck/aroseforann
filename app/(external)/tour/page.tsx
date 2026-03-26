@@ -36,7 +36,7 @@ const TourPage = async () => {
           Tour Dates
         </h2>
       </div>
-      <div className="flex flex-col gap-3 lg:mt-0 mt-[60px] max-md:mx-8">
+      <div className="flex flex-col gap-4 lg:mt-0 mt-[60px] max-md:mx-8">
         {tourDates.shows.map((tour: Show) => (
           <div
             className="border border-gray-700 rounded-lg flex w-[100%] justify-between p-3"
