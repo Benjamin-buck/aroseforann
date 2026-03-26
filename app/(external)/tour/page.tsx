@@ -1,6 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 // app/(external)/blog/[slug]/page.tsx
 
+export const dynamic = "force-dynamic";
+
 import Link from "next/link";
 import { pastTourDates } from "@/constants/tour";
 
@@ -15,7 +17,8 @@ type Show = {
 };
 
 const TourPage = async () => {
-  const res = await fetch("http://localhost:3000/api/v1/shows", {
+  const baseUrl = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:3000";
+  const res = await fetch(`${baseUrl}/api/v1/shows`, {
     headers: {
       Authorization: "Bearer bhq_f626ca16e1a76f71e85ddedd0cf9304116348017",
     },
