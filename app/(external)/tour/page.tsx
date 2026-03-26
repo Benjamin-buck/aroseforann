@@ -2,9 +2,17 @@
 // app/(external)/blog/[slug]/page.tsx
 
 import Link from "next/link";
-import { pastTourDates, tourDates } from "@/constants/tour";
+import { pastTourDates } from "@/constants/tour";
 
 const TourPage = async () => {
+  const res = await fetch("http://localhost:3000/api/v1/shows", {
+    headers: {
+      Authorization: "Bearer bhq_f626ca16e1a76f71e85ddedd0cf9304116348017",
+    },
+  });
+  const tourDates = await res.json();
+
+  console.log("tourDates", tourDates);
   return (
     <div className="mx-auto container mb-10">
       <div className="font-DharmaPunk relative mb-[50px]">
@@ -16,36 +24,26 @@ const TourPage = async () => {
         </h2>
       </div>
       <div className="flex flex-col gap-3 lg:mt-0 mt-[60px] max-md:mx-8">
-        {tourDates.map((tour) => (
+        {tourDates.shows.map((tour) => (
           <div
             className="border border-gray-700 rounded-lg flex w-[100%] justify-between p-3"
-            key={tour.date}
+            key={tour.id}
           >
             <div className="flex lg:items-center gap-2 flex-col lg:flex-row lg:gap-[150px] w-full text-xl font-semibold">
-              <p className=" w-[140px]">{tour.date}</p>
-              <p className="min-w-[200px] ">{tour.city}</p>
+              <p className="w-[140px]">{new Date(tour.date).toLocaleDateString()}</p>
+              <p className="min-w-[200px]">{tour.location}</p>
               <p>{tour.venue}</p>
             </div>
             <div className="flex gap-3 items-center">
-              {tour.RSVP && (
+              {tour.ticketsAvailable && tour.ticketUrl && (
                 <Link
-                  href={tour.RSVP}
-                  className="bg-brand-orange p-2 text-white font-semibold rounded hover:bg-orange-800"
-                >
-                  RSVP
-                </Link>
-              )}
-              {tour.tickets && (
-                <Link
-                  href={tour.tickets}
+                  href={tour.ticketUrl}
                   className="bg-brand-orange p-2 text-white font-semibold rounded hover:bg-orange-800"
                 >
                   Tickets
                 </Link>
               )}
             </div>
-
-            <div className="">{}</div>
           </div>
         ))}
       </div>
