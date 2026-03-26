@@ -20,7 +20,7 @@ const TourPage = async () => {
   const baseUrl = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:3000";
   const res = await fetch(`${baseUrl}/api/v1/shows`, {
     headers: {
-      Authorization: "Bearer bhq_f626ca16e1a76f71e85ddedd0cf9304116348017",
+      Authorization: "Bearer bhq_57b02d63ef07d3c3167d74c72e2ada1fc2463690",
     },
   });
   const tourDates = await res.json();
@@ -43,7 +43,9 @@ const TourPage = async () => {
             key={tour.id}
           >
             <div className="flex lg:items-center gap-2 flex-col lg:flex-row lg:gap-[150px] w-full text-xl font-semibold">
-              <p className="w-[140px]">{new Date(tour.date).toLocaleDateString()}</p>
+              <p className="w-[140px]">
+                {new Date(tour.date).toLocaleDateString()}
+              </p>
               <p className="min-w-[200px]">{tour.location}</p>
               <p>{tour.venue}</p>
             </div>
