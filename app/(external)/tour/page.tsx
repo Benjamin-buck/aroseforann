@@ -50,7 +50,7 @@ const TourPage = async () => {
               <p>{tour.venue}</p>
             </div>
             <div className="flex gap-3 items-center">
-              {tour.ticketsAvailable && tour.ticketUrl && (
+              {tour.ticketUrl && (
                 <Link
                   href={tour.ticketUrl}
                   className="bg-brand-orange p-2 text-white font-semibold rounded hover:bg-orange-800"
