@@ -20,7 +20,7 @@ const TourPage = async () => {
   const baseUrl = process.env.NEXT_PUBLIC_API_URL ?? "https://bandaccount.com";
   const res = await fetch(`${baseUrl}/api/v1/shows`, {
     headers: {
-      Authorization: "Bearer bhq_57b02d63ef07d3c3167d74c72e2ada1fc2463690",
+      Authorization: `Bearer ${process.env.API_KEY}`,
     },
   });
   const tourDates = await res.json();
