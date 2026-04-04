@@ -1,5 +1,6 @@
 import About from "@/components/About";
 import Header from "@/components/Header";
+import LatestBlogPosts from "@/components/LatestBlogPosts";
 import Members from "@/components/Members";
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
         <Header />
         <About />
         <Members />
+        <LatestBlogPosts />
       </section>
     </div>
   );
