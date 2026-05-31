@@ -8,7 +8,7 @@ export default function Home() {
     <div className="">
       <section className="mb-[200px]">
         <Header />
-        <div className="pt-48" />
+        <div className="pt-56 sm:pt-52 md:pt-48" />
         <About />
         <Members />
         <LatestBlogPosts />
