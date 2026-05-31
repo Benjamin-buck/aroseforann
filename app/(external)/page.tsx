@@ -8,6 +8,7 @@ export default function Home() {
     <div className="">
       <section className="mb-[200px]">
         <Header />
+        <div className="pt-48" />
         <About />
         <Members />
         <LatestBlogPosts />
