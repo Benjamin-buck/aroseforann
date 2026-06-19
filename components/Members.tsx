@@ -2,9 +2,9 @@ import Image from "next/image";
 
 const members = [
   { src: "/connor.png", name: "Connor Longaphie", role: "Drummer" },
-  { src: "/benjamin.jpg", name: "Benjamin Alan", role: "Singer / Guitarist" },
+  { src: "/benphoto.png", name: "Benjamin Alan", role: "Singer / Guitarist" },
   { src: "/james.png", name: "James Baron", role: "Rhythm Guitarist" },
-  { src: "/mike.png", name: "Mike Clayton", role: "Lead Guitarist" },
+  { src: "/lee.jpg", name: "Lee ", role: "Bass Guitar" },
 ];
 
 const Members = () => {
