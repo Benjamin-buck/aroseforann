@@ -4,7 +4,7 @@ const members = [
   { src: "/connor.png", name: "Connor Longaphie", role: "Drummer" },
   { src: "/benphoto.png", name: "Benjamin Alan", role: "Singer / Guitarist" },
   { src: "/james.png", name: "James Baron", role: "Rhythm Guitarist" },
-  { src: "/lee.jpg", name: "Lee ", role: "Bass Guitar" },
+  { src: "/lee.JPG", name: "Lee ", role: "Bass Guitar" },
 ];
 
 const Members = () => {
